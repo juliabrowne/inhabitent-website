@@ -32,10 +32,10 @@ add_action('admin_menu', 'inhabitent_remove_submenus', 110);
 // Replace WP logo with Inhabitent logo in login screen
 function inhabitent_change_logo() {
 	 echo '<style type="text/css">
-				 h1 a {background-image:url("' . get_stylesheet_directory_uri() . '/images/inhabitent-logo-img.svg") !important;
-					width: 200px !important;
-					height: 100px !important;
-					background-size: 200px !important;
+				 h1 a {background-image:url("' . get_stylesheet_directory_uri() . '/images/logos/inhabitent-logo-text-dark.svg") !important;
+					width: 300px !important;
+					height: 55px !important;
+					background-size: 300px !important;
 				 </style>'; 
 }
 add_action('login_head', 'inhabitent_change_logo'); 
