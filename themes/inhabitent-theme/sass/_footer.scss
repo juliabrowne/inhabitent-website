@@ -1,8 +1,8 @@
-.site-footer {
-  background-image: url(/images/dark-wood.png);
+// .site-footer {
+//   background-image: url('./ima');
 
 
-  .container {
+  footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -13,6 +13,8 @@
     width: 1120px;
     height: 355px;
     margin: 0 auto;
+    
+    @include background-2x( '../images/dark-wood', 'png', '100%' , '470px', center center, repeat );
   }
 
   .site-info {

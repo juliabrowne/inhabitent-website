@@ -10,7 +10,7 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-<div class="container">
+<div class="footer-container">
 				<div class="site-info">
 					<div class="contact">		
 					<h3 class="uppercase">Contact Info</h3>
@@ -44,7 +44,8 @@
 				
 
 				<div class="footer-logo">
-						<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-text" width="330" alt="Inhabitent Logo" />
+						<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg"			
+						width="330" alt="Inhabitent Logo" />
 					</div>
 					<div class="copyright">
 						<p class="uppercase">Copyright &copy; 2018 Inhabitent</p>
