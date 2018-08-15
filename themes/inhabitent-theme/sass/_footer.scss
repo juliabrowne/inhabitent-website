@@ -1,5 +1,5 @@
 // .site-footer {
-//   background-image: url('./ima');
+//   background-image: url(/assets/images/dark-wood.png);
 
 
   footer {
@@ -13,8 +13,8 @@
     width: 1120px;
     height: 355px;
     margin: 0 auto;
-    
-    @include background-2x( '../images/dark-wood', 'png', '100%' , '470px', center center, repeat );
+
+    @include background-2x( '../assets/images/dark-wood.png', 'png', '100%' , '470px', center center, repeat );
   }
 
   .site-info {
