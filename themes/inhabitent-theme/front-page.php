@@ -37,17 +37,51 @@ get_header(); ?>
     <?php endif; ?>
 
 
+
+
+
+    <?php $terms = get_terms([
+    'taxonomy' => 'product_type',
+    'hide_empty' => false,
+		]); ?>
+
+    <?php foreach ( $terms as $term ) : ?>
+
+    <div class="shop-stuff">
+      <h2>
+        <?php echo $term->name; ?>
+      </h2>
+      <img src="<?php echo get_template_directory_uri()?>/images/product-type-icons/<?php echo $term->slug ?>.svg">
+      <p>
+        <?php echo $term->description; ?>
+      </p>
+    </div>
+
+    <?php endforeach; ?>
+
+
+
+
     <?php
-   $args = array( 'post_type' => 'post', 'order' => 'ASC' );
-   $product_posts = get_posts( $args ); // returns an array of posts ?>
-    <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-    <h1>
-      <?php the_title(); ?>
-    </h1>
-    <?php the_content(); ?>
-    <?php endforeach; wp_reset_postdata(); ?>
+   $args = array( 'post_type' => 'post', 'order' => 'DESC' );
+	 $blog_posts = get_posts( $args ); // returns an array of posts ?>
+    <div class="featured-post-container">
+      <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
 
+      <div class="featured-post">
+        <?php the_post_thumbnail(); ?>
+        <?php inhabitent_posted_on(); ?>
+        <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+        <a href='<?php the_permalink(); ?>'>
+          <h2>
+            <?php the_title(); ?>
+          </h2>
+          <a class="read-entry-button" href='<?php the_permalink(); ?>'>Read Entry</a>
+        </a>
+      </div>
 
+      <?php endforeach; wp_reset_postdata(); ?>
+    </div>
   </main><!-- #main -->
 </div><!-- #primary -->
 

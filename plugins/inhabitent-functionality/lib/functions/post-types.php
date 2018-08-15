@@ -52,12 +52,12 @@ function inhabitent_register_products() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => 'products',
+		'has_archive'           => 'shop',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 		'show_in_rest'          => true,
-		'template_lock'         => 'all',
+		// 'template_lock'         => 'all',
 		'template'              => array(
 			array(
 				'core/paragraph', array(
@@ -70,5 +70,3 @@ function inhabitent_register_products() {
 
 }
 add_action( 'init', 'inhabitent_register_products', 0 );
-
-

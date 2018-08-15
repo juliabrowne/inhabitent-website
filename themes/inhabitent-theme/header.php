@@ -41,10 +41,10 @@
 
 
             <div class="container-nav">
-              <a href="http://localhost:8888/inhabitent/">
-                <img class="logo-header-white" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent-white.svg">
+              <a href="">
+                <img class="logo-header-white" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg">
 
-                <img class="logo-header-reg" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent.svg">
+                <img class="logo-header-reg" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg">
               </a>
 
               <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">

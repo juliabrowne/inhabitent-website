@@ -14,7 +14,7 @@
     height: 355px;
     margin: 0 auto;
 
-    @include background-2x( '../assets/images/dark-wood.png', 'png', '100%' , '470px', center center, repeat );
+    @include background-2x( '../../images/dark-wood', 'png', '100%' , '470px', center center, repeat );
   }
 
   .site-info {
@@ -62,4 +62,3 @@
     width: 100%;
   }
 
-}
