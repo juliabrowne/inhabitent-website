@@ -1,3 +1,55 @@
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../../fonts/Merriweather-Bold.woff2') format('woff2'),
+      url('../../fonts/Merriweather-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../../fonts/Merriweather-LightItalic.woff2') format('woff2'),
+      url('../../fonts/Merriweather-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../../fonts/Merriweather-BoldItalic.woff2') format('woff2'),
+      url('../../fonts/Merriweather-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../../fonts/Merriweather-Light.woff2') format('woff2'),
+      url('../../fonts/Merriweather-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Novecentos Sans Web, sans-serif';
+  src: url('../../fonts/Novecentos-Normal.eot');
+  src: url('../../fonts/Novecentos-Normal.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/Novecentos-Normal.woff2') format('woff2'),
+      url('../../fonts/Novecentos-Normal.woff') format('woff'),
+      url('../../fonts/Novecentos-Normal.ttf') format('truetype'),
+      url('../../fonts/Novecentos-Normal.svg#.') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Novecentos';
+  src: url('../../fonts/Novecentos-DemiBold.eot');
+  src: url('../../fonts/Novecentos-DemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/Novecentos-DemiBold.woff2') format('woff2'),
+      url('../../fonts/Novecentos-DemiBold.woff') format('woff'),
+      url('../../fonts/Novecentos-DemiBold.ttf') format('truetype'),
+      url('../../fonts/Novecentos-DemiBold.svg#.') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

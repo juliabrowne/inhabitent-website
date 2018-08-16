@@ -44,7 +44,7 @@
 
 
     <div class="footer-logo">
-      <img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg" width="330" alt="Inhabitent Logo" />
+      <img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg" width="300" alt="Inhabitent Logo" />
     </div>
     <div class="copyright">
       <p class="uppercase">Copyright &copy; 2018 Inhabitent</p>

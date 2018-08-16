@@ -6,3 +6,13 @@
   height: 500px;
   width: 300px;
 }
+
+.home .shop-stuff-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.home .shop-stuff-icon {
+  height: 40px;
+  width: 40px;
+}

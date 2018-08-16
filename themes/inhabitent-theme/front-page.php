@@ -45,21 +45,19 @@ get_header(); ?>
     'hide_empty' => false,
 		]); ?>
 
-    <?php foreach ( $terms as $term ) : ?>
-
-    <div class="shop-stuff">
-      <h2>
-        <?php echo $term->name; ?>
-      </h2>
-      <img src="<?php echo get_template_directory_uri()?>/images/product-type-icons/<?php echo $term->slug ?>.svg">
-      <p>
-        <?php echo $term->description; ?>
-      </p>
+    <div class="shop-stuff-container">
+      <?php foreach ( $terms as $term ) : ?>
+      <div class="shop-stuff">
+        <h2>
+          <?php echo $term->name; ?>
+        </h2>
+        <div class="shop-stuff-icon"><img src="<?php echo get_template_directory_uri()?>/images/product-type-icons/<?php echo $term->slug ?>.svg"></div>
+        <p>
+          <?php echo $term->description; ?>
+        </p>
+      </div>
+      <?php endforeach; ?>
     </div>
-
-    <?php endforeach; ?>
-
-
 
 
     <?php
