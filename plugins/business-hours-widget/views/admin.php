@@ -9,7 +9,7 @@
 <p>
   <label for="<?php echo $this->get_field_id('monday_friday'); ?>">Monday to Friday:</label>
   <input class="widefat" id="<?php echo $this->get_field_id('monday_friday'); ?>" name="<?php echo $this->get_field_name('monday_friday'); ?>" type="text" value="<?php echo $monday_friday; ?>"> 
-</>
+</p>
 <!-- Saturday -->
 <p>
 <label for="<?php echo $this->get_field_id('saturday'); ?>">Saturday:</label>
