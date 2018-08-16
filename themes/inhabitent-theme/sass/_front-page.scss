@@ -1,3 +1,39 @@
+.home {
+  .home-banner{
+      height: 100vh;
+      width: 100%;
+      margin-bottom: 2rem;
+      background-repeat: no-repeat;
+      background-image: url(../../images/logos/inhabitent-logo-full.svg),
+      linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)
+        ),
+        url(../../images/home-hero.jpg);
+      background-size: 275px, cover, cover;
+      background-position: center 50%, center, center;
+    }
+  .home-container {
+    max-width: 1224px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .shop-stuff {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .section-title {
+      flex-basis: 100%;
+      text-align: center;
+      margin: 2.5rem;
+    }
+  }
+}
+
+
+
+
 .home .featured-post-container {
   display: flex;
   flex-direction: row;
