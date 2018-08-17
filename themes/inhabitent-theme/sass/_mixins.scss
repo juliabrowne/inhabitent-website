@@ -11,6 +11,15 @@
 	margin-right: auto;
 }
 
+
+// @mixin font-main {
+//   font-family: 'Novecento Sans Web', sans-serif;
+// }
+
+// @mixin font-main2 {
+//   font-family: 'Merriweather', sans-serif;
+// }
+
 @mixin background-2x($path, $ext: "png", $w: auto, $h: auto, $pos: left top, $repeat: no-repeat) {
 
   $at1x_path: "#{$path}.#{$ext}";

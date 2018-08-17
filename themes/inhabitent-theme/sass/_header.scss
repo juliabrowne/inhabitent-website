@@ -1,90 +1,108 @@
-.site-header {
-  position: fixed;
-  background-color: hsla(0, 0%, 100%, 0.85);
-  border-bottom: 1px solid #e1e1e1;
-  padding: 0.5rem 0;
-  transition: top 0.5s linear;
-  width: 100%;
-  z-index: 3;
-  .header-container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    .site-branding {
-      img {
-        height: 33px;
-        width: 50px;
-      }
-    }
-    .main-navigation {
-      width: auto;
-      float: none;
-      display: flex;
-      a {
-        font-family: $font__main;
-        text-transform: uppercase;
-        color: $color_green;
-        &:hover {
-          color: black;
-        }
-      }
-      li {
-        padding-left: 1.5rem;
-      }
-      .header-search {
-        line-height: 1;
-        padding-left: 1.5rem;
-        .search-form {
-          color: $color_green;
-          border: none;
-          .search-submit {
-            background: none;
-            border: none;
-            box-shadow: none;
-            padding: 0;
-            &:focus {
-              outline: none;
-            }
-            .icon-search {
-              color: $color_green;
-              font-size: 1.2rem;
-            }
-          }
-          .search-field {
-            width: 0;
-            padding: 0;
-            margin: 0;
-            border: none;
-            transition: 1s;
-          }
-          .search-focus {
-            width: 200px;
-            padding-left: 5px;
-            &:focus {
-              outline: none;
-            }
-          }
-        }
-      }
-    }
+#header-logo-icon {
+  height: 33px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.main-navigation {
+  display: flex;
+  a {
+    font-family: "Novecent Sans Web", sans-serif;
+    text-transform: uppercase;
+    // color: $color-green;
+    color: yellow;
   }
 }
 
-.logo-header-light {
-  display: none;
-}
 
-.site-content {
-  padding-top: 3.5rem;
-}
 
-.home,
-.page-template-about {
-  .site-header {
-    background: none;
-    border: none;
-  }
-  .site-content {
-    padding-top: 0;
-  }
-}
+// .site-header {
+//   position: fixed;
+//   background-color: hsla(0, 0%, 100%, 0.85);
+//   border-bottom: 1px solid #e1e1e1;
+//   padding: 0.5rem 0;
+//   transition: top 0.5s linear;
+//   width: 100%;
+//   z-index: 3;
+//   .header-container {
+//     align-items: center;
+//     display: flex;
+//     justify-content: space-between;
+//     .site-branding {
+//       img {
+//         height: 33px;
+//         width: 50px;
+//       }
+//     }
+//     .main-navigation {
+//       width: auto;
+//       float: none;
+//       display: flex;
+//       a {
+//         font-family: $font__main;
+//         text-transform: uppercase;
+//         color: $color_green;
+//         &:hover {
+//           color: black;
+//         }
+//       }
+//       li {
+//         padding-left: 1.5rem;
+//       }
+//       .header-search {
+//         line-height: 1;
+//         padding-left: 1.5rem;
+//         .search-form {
+//           color: $color_green;
+//           border: none;
+//           .search-submit {
+//             background: none;
+//             border: none;
+//             box-shadow: none;
+//             padding: 0;
+//             &:focus {
+//               outline: none;
+//             }
+//             .icon-search {
+//               color: $color_green;
+//               font-size: 1.2rem;
+//             }
+//           }
+//           .search-field {
+//             width: 0;
+//             padding: 0;
+//             margin: 0;
+//             border: none;
+//             transition: 1s;
+//           }
+//           .search-focus {
+//             width: 200px;
+//             padding-left: 5px;
+//             &:focus {
+//               outline: none;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .logo-header-light {
+//   display: none;
+// }
+
+// .site-content {
+//   padding-top: 3.5rem;
+// }
+
+// .home,
+// .page-template-about {
+//   .site-header {
+//     background: none;
+//     border: none;
+//   }
+//   .site-content {
+//     padding-top: 0;
+//   }
+// }

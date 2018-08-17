@@ -10,7 +10,8 @@ get_header(); ?>
 
 <div class="home-banner"> </div>
 
-<h2>Shop Stuff</h2>
+<!-- Shop Section -->
+<h2 class="shop-stuff-title">Shop Stuff</h2>
 
     <?php $terms = get_terms([
     'taxonomy' => 'product_type',
@@ -36,22 +37,35 @@ get_header(); ?>
 
 
 <!-- Journal Posts --> 
+<h2 class="inhabitent-journal-title">Inhabitent Journal</h2>
+
     <?php
-   $args = array( 'post_type' => 'post', 'order' => 'DESC' );
+   $args = array( 'post_type' => 'post', 'order' => 'DESC', 'numberposts' => 3);
 	 $blog_posts = get_posts( $args ); // returns an array of posts ?>
+    
     <div class="featured-post-container">
-      <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
+    
+    <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
 
       <div class="featured-post">
-        <?php the_post_thumbnail(); ?>
-        <?php inhabitent_posted_on(); ?>
+
+      <div class="featured-post-thumbnail">
+      <?php the_post_thumbnail(); ?>
+      </div>  
+
+      <section class="featured-post-info">
+        <div class="date-and-comment">
+        <?php inhabitent_posted_on(); ?> / 
         <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+        </div>
+
         <a href='<?php the_permalink(); ?>'>
-          <h2>
+        <h2 class="featured-post-title">
             <?php the_title(); ?>
-          </h2>
-          <a class="read-entry-button" href='<?php the_permalink(); ?>'>Read Entry</a>
+        </h2>
+        <a class="read-entry-button" href='<?php the_permalink(); ?>'>Read Entry</a>
         </a>
+    </section>  
       </div>
 
       <?php endforeach; wp_reset_postdata(); ?>
