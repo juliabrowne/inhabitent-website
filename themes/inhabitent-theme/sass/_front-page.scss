@@ -29,6 +29,7 @@
   text-align: center;
   width: 23%;
   justify-content: space-evenly;
+  align-items: center;
   margin-left: 20px;
   margin-right: 20px;
   font-family: "Merriweather", sans-serif;
@@ -44,9 +45,6 @@
 .home .shop-stuff-icon {
   height: 70px;
   width: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .home .inhabitent-journal-title {
@@ -71,7 +69,6 @@
 .home .featured-post {
   height: 500px;
   width: 31%;
-  
   h2 {
     margin-top: -15px;
     padding-left: 1rem;
@@ -95,7 +92,6 @@
     font-size: 12px;
     font-family: "Merriweather", sans-serif;
   }
-  
   .featured-post-thumbnail {
     border: 1px solid #e1e1e1;
     border-bottom-width: 5px;
@@ -110,7 +106,6 @@
     justify-content: space-between;
     padding: .75rem;
   }
-
   .featured-post-thumbnail .featured-post-info {
     left: 50%;
     max-height: 250px;
@@ -120,69 +115,121 @@
     transform: translate(-50%, -52%);
     width: auto;
   }
-
 }
 
 
-.adventure-container {
-  margin: 30px auto;
+
+.adventure-title {
+  font-family: "Novecento Sans Web", sans-serif;
+  font-size: 38.4px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3.75rem;
+  margin-top: -2rem;
+  letter-spacing: 2px;
 }
 
-.adventure-grid {
-  display: grid;
-  grid-template: 1fr 1fr / 2fr 1fr 1fr;
-  grid-gap: 20px;
-  height: 700px;
-  position: relative;
-  padding: 30px 0;
-  .grid-item {
-    position: relative;
-    max-width: none;
-    width: auto;
-    overflow: hidden;
-    .adventure-content-title {
-      padding: 420px 20px;
-      font-size: 1.8rem;
-      color: white;
-      font-weight: normal;
-      line-height: 1.2;
-      background: rgba(0, 0, 0, 0.35);
-      transform: translateY(-45%);
+
+.boxone {
+  display: flex;
+  flex-direction: row;
+  width: 99%;
+  height: auto;
+  margin-left: 30px;
+  a {
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    &:hover {
+      color: purple;
     }
-    a{
-      position: absolute;
-      top: 51%;
-      left: 20px;
-    }
-    .grid-container {
-      position: absolute;
-      height: 100%;
-    }
-    img {
-      position: absolute;
-      width: auto;
-      max-width: none;
-      min-height: 100%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-12%, -50%);
-      z-index: -1;
-    }
-    &.item1 {
-      grid-area: 1 / 1 / 3 / 2;
-      h2 {
-        font-size: 3.2rem;
-      }
-      a {
-        top: 29%;
-      }
-    }
-    &.item2 {
-      grid-area: 1 / 2 / 2 / 4;
-      h2 {
-        font-size: 2.6rem;
+  }
+  h2 {
+    margin-left: 10px;
+    font-family: "Merriweather", sans-serif;
+    font-weight: 400;
+    margin-top: 24px;
+    line-height: 1.25;
+    letter-spacing: 2px;
+  }
+  .big-box {
+    font-size: 48px;
+  }
+  .small-box {
+    font-size: 22px;
+  }
+  .one {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/canoe-girl.jpg);
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+  .onex {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 588px;
+    width: 50%;
+    a {
+      color: red;
+      width: 210px;
+      &:hover {
+        color: purple;
       }
     }
   }
+  .boxtwo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 50%;
+    margin-right: 30px;
+  }
+  .two {
+    height: 250px;
+    width: 100%;
+    margin: 10px;
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/beach-bonfire.jpg);
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+  .three {
+    height: 250px;
+    width: 47%;
+    margin: 10px;
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/mountain-hikers.jpg);
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+  .four {
+    height: 250px;
+    width: 46%;
+    margin: 10px;
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/night-sky.jpg);
+    background-size: cover, cover;
+    background-position: center, center;
+  }
 
+  // .three .four {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
+
+
+  #read-entry1 {
+    padding: 5px;
+    border: 1px solid white;
+    background-color: white;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    &:hover {
+      background: #248a83;
+    }
+  }
 }

@@ -71,38 +71,36 @@ get_header(); ?>
     </div>
 
 
+<h3 class="adventure-title">Latest Adventures</h3>
+  <section class="boxone">
+      <div class="onex">
+        <div class="one">
+        <a><h2 class="big-box">Getting Back to Nature in a Canoe</h2></a>
+        <a id='read-entry1' href='<?php the_permalink(); ?>'>Read More</a>
+        </div>
+        <a class='tax-button' href='<?php the_permalink(); ?>'>More Adventures</a>
+        </div>
 
-<section class="adventure-container container">
-  <h2 class="adventure-title">Latest Adventures</h2>
+  <div class="boxtwo">
+      <div class="two">
+        <a><h2 class="big-box">A Night with Friends at the Beach</h2></a>
+        <a id='read-entry1' href='<?php the_permalink(); ?>'>Read More</a>
+      </div>
+
+      <div class="three">
+        <a><h2 class="small-box">Taking in the View at Big Mountain</h2></a>
+        <a id='read-entry1' href='<?php the_permalink(); ?>'>Read More</a>
+      </div>
+
+      <div class="four">
+        <a><h2 class="small-box">Star-Gazing at the Night Sky</h2></a>
+        <a id='read-entry1' href='<?php the_permalink(); ?>'>Read More</a>
+      </div>
   
-  <?php $args = array('post_type' => 'adventure', 'order' => 'ASC', 'posts_per_page' => 4);
-        $adventure_posts = get_posts($args);
-        ?>
-
-  <div class="adventure-grid">
-    <?php $i = 0 ?>
-    <?php foreach ($adventure_posts as $post):setup_postdata($post); ?>
-        <?php $i++ ?>
-        <div class="grid-item item<?php echo $i ?>">
-        
-          <div class="grid-container">
-            <?php
-            if(has_post_thumbnail()):
-              the_post_thumbnail('large');
-            endif; ?>
-          </div>
-
-          <div class="adventure-content">
-            <h2 class="adventure-content-title"><?php the_title() ?></h2>
-            <a href="<?php the_permalink(); ?>" class="adventure-entry">Read Entry</a>
-          </div>
-
-          </div>
-
-    <?php endforeach; wp_reset_postdata(); ?>
-    <a class="more-adventures">More Adventures</a>
-
+    </div>
 </section>
+
+
 
   </main><!-- #main -->
 </div><!-- #primary -->

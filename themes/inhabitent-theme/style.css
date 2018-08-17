@@ -224,26 +224,30 @@ th {
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff");
+  src: url("../../fonts/Merriweather-BoldItalic.eot");
+  src: url("../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/merriweather/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
   font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Light.eot");
+  src: url("../../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.woff") format("woff"), url("../../fonts/Merriweather-Light.ttf") format("truetype"), url("../../fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.woff") format("woff");
+  src: url("../../fonts/Merriweather-LightItalic.eot");
+  src: url("../../fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.woff") format("woff"), url("../../fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff");
+  src: url("../../fonts/Merriweather-Bold.eot");
+  src: url("../../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff"), url("../../fonts/Merriweather-Bold.ttf") format("truetype"), url("../../fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
   font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.woff") format("woff");
-  font-weight: 300;
   font-style: normal; }
 
 @font-face {
@@ -878,6 +882,9 @@ object {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 20px;
   margin-right: 20px;
   font-family: "Merriweather", sans-serif; }
@@ -895,16 +902,7 @@ object {
 
 .home .shop-stuff-icon {
   height: 70px;
-  width: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  width: 70px; }
 
 .home .inhabitent-journal-title {
   font-family: "Novecento Sans Web", sans-serif;
@@ -981,54 +979,112 @@ object {
             transform: translate(-50%, -52%);
     width: auto; }
 
-.adventure-container {
-  margin: 30px auto; }
+.adventure-title {
+  font-family: "Novecento Sans Web", sans-serif;
+  font-size: 38.4px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3.75rem;
+  margin-top: -2rem;
+  letter-spacing: 2px; }
 
-.adventure-grid {
-  display: grid;
-  grid-template: 1fr 1fr / 2fr 1fr 1fr;
-  grid-gap: 20px;
-  height: 700px;
-  position: relative;
-  padding: 30px 0; }
-  .adventure-grid .grid-item {
-    position: relative;
-    max-width: none;
-    width: auto;
-    overflow: hidden; }
-    .adventure-grid .grid-item .adventure-content-title {
-      padding: 420px 20px;
-      font-size: 1.8rem;
-      color: white;
-      font-weight: normal;
-      line-height: 1.2;
-      background: rgba(0, 0, 0, 0.35);
-      -webkit-transform: translateY(-45%);
-              transform: translateY(-45%); }
-    .adventure-grid .grid-item a {
-      position: absolute;
-      top: 51%;
-      left: 20px; }
-    .adventure-grid .grid-item .grid-container {
-      position: absolute;
-      height: 100%; }
-    .adventure-grid .grid-item img {
-      position: absolute;
-      width: auto;
-      max-width: none;
-      min-height: 100%;
-      left: 50%;
-      top: 50%;
-      -webkit-transform: translate(-12%, -50%);
-              transform: translate(-12%, -50%);
-      z-index: -1; }
-    .adventure-grid .grid-item.item1 {
-      grid-area: 1 / 1 / 3 / 2; }
-      .adventure-grid .grid-item.item1 h2 {
-        font-size: 3.2rem; }
-      .adventure-grid .grid-item.item1 a {
-        top: 29%; }
-    .adventure-grid .grid-item.item2 {
-      grid-area: 1 / 2 / 2 / 4; }
-      .adventure-grid .grid-item.item2 h2 {
-        font-size: 2.6rem; }
+.boxone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 99%;
+  height: auto;
+  margin-left: 30px; }
+  .boxone a {
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none; }
+    .boxone a:hover {
+      color: purple; }
+  .boxone h2 {
+    margin-left: 10px;
+    font-family: "Merriweather", sans-serif;
+    font-weight: 400;
+    margin-top: 24px;
+    line-height: 1.25;
+    letter-spacing: 2px; }
+  .boxone .big-box {
+    font-size: 48px; }
+  .boxone .small-box {
+    font-size: 22px; }
+  .boxone .one {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/adventure-photos/canoe-girl.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/canoe-girl.jpg);
+    background-size: cover, cover;
+    background-position: center, center; }
+  .boxone .onex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px;
+    height: 588px;
+    width: 50%; }
+    .boxone .onex a {
+      color: red;
+      width: 210px; }
+      .boxone .onex a:hover {
+        color: purple; }
+  .boxone .boxtwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 500px;
+    width: 50%;
+    margin-right: 30px; }
+  .boxone .two {
+    height: 250px;
+    width: 100%;
+    margin: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/adventure-photos/beach-bonfire.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/beach-bonfire.jpg);
+    background-size: cover, cover;
+    background-position: center, center; }
+  .boxone .three {
+    height: 250px;
+    width: 47%;
+    margin: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/adventure-photos/mountain-hikers.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/mountain-hikers.jpg);
+    background-size: cover, cover;
+    background-position: center, center; }
+  .boxone .four {
+    height: 250px;
+    width: 46%;
+    margin: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/adventure-photos/night-sky.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/night-sky.jpg);
+    background-size: cover, cover;
+    background-position: center, center; }
+  .boxone #read-entry1 {
+    padding: 5px;
+    border: 1px solid white;
+    background-color: white;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase; }
+    .boxone #read-entry1:hover {
+      background: #248a83; }
