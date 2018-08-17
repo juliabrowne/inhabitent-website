@@ -33,7 +33,6 @@ get_header(); ?>
 
     </div>
 
-    </section>
 
 
 <!-- Journal Posts --> 
@@ -70,8 +69,42 @@ get_header(); ?>
 
       <?php endforeach; wp_reset_postdata(); ?>
     </div>
+
+
+
+<section class="adventure-container container">
+  <h2 class="adventure-title">Latest Adventures</h2>
+  
+  <?php $args = array('post_type' => 'adventure', 'order' => 'ASC', 'posts_per_page' => 4);
+        $adventure_posts = get_posts($args);
+        ?>
+
+  <div class="adventure-grid">
+    <?php $i = 0 ?>
+    <?php foreach ($adventure_posts as $post):setup_postdata($post); ?>
+        <?php $i++ ?>
+        <div class="grid-item item<?php echo $i ?>">
+        
+          <div class="grid-container">
+            <?php
+            if(has_post_thumbnail()):
+              the_post_thumbnail('large');
+            endif; ?>
+          </div>
+
+          <div class="adventure-content">
+            <h2 class="adventure-content-title"><?php the_title() ?></h2>
+            <a href="<?php the_permalink(); ?>" class="adventure-entry">Read Entry</a>
+          </div>
+
+          </div>
+
+    <?php endforeach; wp_reset_postdata(); ?>
+    <a class="more-adventures">More Adventures</a>
+
+</section>
+
   </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
