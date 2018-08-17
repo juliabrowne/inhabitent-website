@@ -78,7 +78,11 @@ get_header(); ?>
         <a><h2 class="big-box">Getting Back to Nature in a Canoe</h2></a>
         <a id='read-entry1' href='<?php the_permalink(); ?>'>Read More</a>
         </div>
+
+        <div class="adventure-button">
         <a class='tax-button' href='<?php the_permalink(); ?>'>More Adventures</a>
+        </div>
+
         </div>
 
   <div class="boxtwo">

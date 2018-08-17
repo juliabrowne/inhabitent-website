@@ -1001,24 +1001,34 @@ object {
   height: auto;
   margin-left: 30px; }
   .boxone a {
-    color: white;
     padding: 0.75rem;
     text-decoration: none; }
     .boxone a:hover {
-      color: purple; }
+      color: grey; }
   .boxone h2 {
+    color: white;
     margin-left: 10px;
     font-family: "Merriweather", sans-serif;
     font-weight: 400;
     margin-top: 24px;
     line-height: 1.25;
     letter-spacing: 2px; }
+  .boxone .tax-button {
+    font-size: 19.2px;
+    background: #248a83;
+    font-family: "Novecento Sans Web",sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+    margin-top: 10px;
+    white-space: nowrap;
+    color: white; }
   .boxone .big-box {
     font-size: 48px; }
   .boxone .small-box {
     font-size: 22px; }
   .boxone .one {
-    height: 600px;
+    height: 520px;
     width: 100%;
     margin-bottom: 20px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/adventure-photos/canoe-girl.jpg);
@@ -1034,10 +1044,9 @@ object {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 10px;
-    height: 588px;
+    height: 660px;
     width: 50%; }
     .boxone .onex a {
-      color: red;
       width: 210px; }
       .boxone .onex a:hover {
         color: purple; }
