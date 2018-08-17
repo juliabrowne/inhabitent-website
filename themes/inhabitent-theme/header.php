@@ -17,6 +17,7 @@
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <?php wp_head(); ?>
     </head>
+
     <body <?php body_class(); ?>>
     
         <div id="page" class="hfeed site">
@@ -35,7 +36,14 @@
                     
           <h1 class="site-title screen-reader-text">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-           </h1>
+          </h1>
+
+
+         <div class="site-icon"><a href="<?php echo home_url() ?>">
+             <img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="Inhabitent Header Logo Icon">
+           </a>
+        </div>
+           
                     
           <p class="site-description"><?php bloginfo( 'description' ); ?></p>
         
@@ -44,15 +52,14 @@
 
 
         <nav id="site-navigation" class="main-navigation" role="navigation">
-            <a href="<?php echo home_url() ?>">
-              <img id="header-logo-icon" src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="Inhabitent Header Logo Icon">     
-            </a>
+
 
         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
               
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>  
         
         <div class="search-form">
+            <i class="fas fa-search"></i>
             <?php get_search_form(); ?>
         
         </nav><!-- #site-navigation -->

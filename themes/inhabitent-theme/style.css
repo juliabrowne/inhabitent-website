@@ -703,74 +703,99 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-.header-container {
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  background: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid black;
-  z-index: 3; }
-  .header-container .site-header {
-    position: absolute; }
+.content-area .hero-image-header {
+  height: 100vh; }
+
+.content-area h1 {
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif;
+  line-height: 1.25; }
+
+.content-area h2 {
+  margin-top: 60px;
+  font-size: 2.1rem;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif; }
+
+.content-area p {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  font-family: "Merriweather", sans-serif; }
 
 .site-header {
-  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Novecento Sans Web", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transform: tranlateX(-50%);
-          transform: tranlateX(-50%);
-  font-family: "Novecento Sans Web", sans-serif;
-  text-transform: uppercase;
-  padding: 10px 0;
-  left: 50%;
-  z-index: 3; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #e1e1e1; }
+  .site-header.top {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 0; }
+
+.site-branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .site-branding .site-icon {
+    height: 33px;
+    width: 50px;
+    margin-top: 30px;
+    margin-left: -50px; }
 
 .main-navigation {
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
-  z-index: 2; }
-
-.main-navigation a {
-  font-size: 16px;
-  color: #248a83;
-  padding: 0 15px;
-  margin-top: 5px;
-  text-transform: uppercase; }
-  .main-navigation a:hover {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin-top: 35px; }
+  .main-navigation .menu a {
+    text-transform: uppercase;
+    color: teal;
+    padding: 12.5px; }
+    .main-navigation .menu a:hover {
+      color: grey; }
+  .main-navigation .menu a.top {
     color: white; }
-
-.main-navigation #header-logo-icon {
-  height: 33px;
-  width: 50px;
-  margin-left: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: left;
-      align-content: left;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left; }
-
-.search-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.search-field {
-  display: none;
-  background: none;
-  border: none;
-  outline: none;
-  font-family: "Novecento Sans Web", sans-serif;
-  text-transform: uppercase; }
+    .main-navigation .menu a.top:hover {
+      color: grey; }
+  .main-navigation .page_item a:active {
+    color: teal; }
+  .main-navigation .fas.fa-search {
+    margin-left: 15px;
+    color: teal; }
+    .main-navigation .fas.fa-search:hover {
+      color: black; }
+    .main-navigation .fas.fa-search.top {
+      color: white; }
+    .main-navigation .fas.fa-search.top:hover {
+      color: grey; }
 
 .site-footer {
   background-image: url("../../images/dark-wood.png");
