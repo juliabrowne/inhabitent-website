@@ -702,6 +702,7 @@ object {
 
 /*--------------------------------------------------------------
 # Page Templates
+# Contains templates for About page, Sidebar, Single Blog Post page,
 --------------------------------------------------------------*/
 .content-area .hero-image-header {
   height: 100vh; }
@@ -727,6 +728,66 @@ object {
   margin-right: auto;
   margin-bottom: 60px;
   font-family: "Merriweather", sans-serif; }
+
+.sidebar {
+  width: 300px;
+  min-height: 100%;
+  border-left: 1px solid teal;
+  padding: 100px 0 0 50px; }
+  .sidebar h2 {
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 1.35rem;
+    letter-spacing: 3px;
+    text-align: left;
+    font-weight: 700; }
+  .sidebar p {
+    margin: 15px 0; }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .sidebar a {
+    font-family: "Merriweather", sans-serif;
+    color: orange; }
+    .sidebar a:hover {
+      color: black; }
+
+.post {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 30px 0 0;
+  width: 790px; }
+  .post img {
+    width: auto;
+    height: 520px;
+    min-width: 100%; }
+  .post .entry-title {
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 39px;
+    position: absolute;
+    padding: .75rem 1.5rem;
+    margin-top: 2.25rem;
+    background: #248a83;
+    text-align: left;
+    line-height: 1.1;
+    top: 110px;
+    max-width: 75%; }
+    .post .entry-title a, .post .entry-title .entry-title {
+      color: white;
+      font-size: 2.2rem;
+      font-weight: 700;
+      padding: 0; }
+      .post .entry-title a:hover, .post .entry-title .entry-title:hover {
+        color: orange; }
+  .post .entry-meta {
+    position: absolute;
+    font-family: "Novecento Sans Web", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 20px;
+    right: 30px;
+    top: 592px;
+    background: #248a83; }
 
 .site-header {
   z-index: 99;
