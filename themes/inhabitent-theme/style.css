@@ -942,12 +942,21 @@ object {
   font-size: 29px;
   margin: 20px 0px; }
 
-.button-border {
+.social-media {
   border: 1px solid #000;
-  color: #000; }
-  .button-border:hover {
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  font-size: 0.9rem; }
+  .social-media:hover {
     background: #248a83;
-    cursor: pointer; }
+    cursor: pointer;
+    color: white;
+    border: none; }
 
 .site-header {
   z-index: 99;
