@@ -8,9 +8,11 @@ get_header(); ?>
 
 
 <div class="shop-stuff-all">
-          <h2><?php single_term_title(); ?></h2>
+<div class="taxonomy-content">      
+  <h2 class="shop-stuff-header"><?php single_term_title(); ?></h2>
         <?php echo term_description( $term_id , $taxonomy ) ?>
-</div>      
+</div> 
+</div>     
       <section class="shop-products">
         <?php if ( have_posts() ) : ?>
 
