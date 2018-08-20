@@ -72,33 +72,33 @@ get_header(); ?>
 
 
 <h3 class="adventure-title">Latest Adventures</h3>
-  <section class="boxone">
-      <div class="onex">
-        <div class="one">
+  <section class="adventure-container">
+      <div class="adventure-x">
+        <div class="adventure-1">
         <a><h2 class="big-box">Getting Back to Nature in a Canoe</h2></a>
-        <a id='read-entry1' href='<?php the_permalink(); ?>'>Read More</a>
+        <a id='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
         </div>
 
         <div class="adventure-button">
-        <a class='tax-button' href='<?php the_permalink(); ?>'>More Adventures</a>
+        <a class='text-button' href='<?php the_permalink(); ?>'>More Adventures</a>
         </div>
 
         </div>
 
-  <div class="boxtwo">
-      <div class="two">
+  <div class="adventure-container-2">
+      <div class="adventure-2">
         <a><h2 class="big-box">A Night with Friends at the Beach</h2></a>
-        <a id='read-entry1' href='<?php the_permalink(); ?>'>Read More</a>
+        <a id='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
       </div>
 
-      <div class="three">
+      <div class="adventure-3">
         <a><h2 class="small-box">Taking in the View at Big Mountain</h2></a>
-        <a id='read-entry1' href='<?php the_permalink(); ?>'>Read More</a>
+        <a id='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
       </div>
 
-      <div class="four">
+      <div class="adventure-4">
         <a><h2 class="small-box">Star-Gazing at the Night Sky</h2></a>
-        <a id='read-entry1' href='<?php the_permalink(); ?>'>Read More</a>
+        <a id='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
       </div>
   
     </div>

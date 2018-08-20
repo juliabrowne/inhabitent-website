@@ -10,8 +10,9 @@ get_header(); ?>
  <?php
    $args = array( 'post_type' => 'post', 'order' => 'DESC');
 	 $blog_posts = get_posts( $args ); // returns an array of posts ?>
-    
-    <div class="featured-post-container">
+    <section id="bob">
+
+    <div class="journal-post-container">
     
     <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
 
@@ -21,7 +22,6 @@ get_header(); ?>
       <?php the_post_thumbnail(); ?>
       </div>  
 
-      <section class="featured-post-info">
         <div class="date-and-comment">
         <?php inhabitent_posted_on(); ?> / 
         <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
@@ -32,17 +32,17 @@ get_header(); ?>
 						<?php the_title(); ?>
 				</h2>
 				</a>	
-				<?php the_content(); ?>
+				<?php the_excerpt(); ?>
         <a class="read-entry-button" href='<?php the_permalink(); ?>'>Read Entry</a>
-        </a>
-    </section>  
-      </div>
+				</a>
+				
+ 
+			</div>
 
       <?php endforeach; wp_reset_postdata(); ?>
-    </div>
+			</div>
 
+		<?php get_sidebar(); ?>
+</section>
 
-
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

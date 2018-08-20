@@ -45,3 +45,12 @@ function inhabitent_change_url($url) {
 	return get_bloginfo ('url'); 
 }
 add_filter('login_headerurl', 'inhabitent_change_url'); 
+
+// Increase products to 16
+function product_number($query){
+	if(is_post_type_archive('product')){
+		$query->set('posts_per_page', 16);
+		return;
+	}
+}
+add_action('pre_get_posts', 'product_number');

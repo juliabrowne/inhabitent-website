@@ -702,7 +702,12 @@ object {
 
 /*--------------------------------------------------------------
 # Page Templates
-# Contains templates for About page, Sidebar, Single Blog Post page,
+# Contains templates for: 
+        About page, 
+        Sidebar, 
+        Single Blog Post page, 
+        Shop Products page, 
+        Single Product page
 --------------------------------------------------------------*/
 .content-area .hero-image-header {
   height: 100vh; }
@@ -729,34 +734,37 @@ object {
   margin-bottom: 60px;
   font-family: "Merriweather", sans-serif; }
 
-.sidebar {
-  width: 300px;
+#secondary {
+  width: 30%;
   min-height: 100%;
   border-left: 1px solid teal;
-  padding: 100px 0 0 50px; }
-  .sidebar h2 {
+  margin: 0;
+  padding: 0; }
+  #secondary h2 {
     font-family: "Novecento Sans Web", sans-serif;
     font-size: 1.35rem;
     letter-spacing: 3px;
     text-align: left;
     font-weight: 700; }
-  .sidebar p {
+  #secondary p {
+    font-family: "Merriweather", sans-serif;
     margin: 15px 0; }
-  .sidebar ul {
+  #secondary ul {
     list-style: none;
     padding: 0;
     margin: 0; }
-  .sidebar a {
+  #secondary a {
     font-family: "Merriweather", sans-serif;
     color: orange; }
-    .sidebar a:hover {
+    #secondary a:hover {
       color: black; }
 
 .post {
   position: relative;
   overflow: hidden;
   padding: 100px 30px 0 0;
-  width: 790px; }
+  width: 790px;
+  margin-left: 50px; }
   .post img {
     width: auto;
     height: 520px;
@@ -782,12 +790,198 @@ object {
   .post .entry-meta {
     position: absolute;
     font-family: "Novecento Sans Web", sans-serif;
+    font-size: 16px;
     color: white;
     text-transform: uppercase;
     padding: 0 20px;
     right: 30px;
     top: 592px;
     background: #248a83; }
+
+.journal-post-container {
+  width: 100%; }
+
+.featured-post {
+  width: 70%; }
+
+#bob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.shop-stuff-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px dashed lightgrey;
+  font-family: "Merriweather", sans-serif; }
+  .shop-stuff-all .shop-stuff-header {
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
+    font-size: 39px;
+    margin-top: 90px; }
+  .shop-stuff-all .shop-taxonomy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font-family: "Novecentos Sans Web", sans-serif;
+    text-transform: uppercase;
+    font-size: 19.2px; }
+  .shop-stuff-all a {
+    color: #248a83;
+    text-decoration: none; }
+    .shop-stuff-all a:hover {
+      color: orange; }
+  .shop-stuff-all p {
+    margin: 0 1.5rem; }
+
+.shop-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 45px;
+  margin-bottom: 70px; }
+
+.shop-product {
+  width: 24%;
+  height: auto;
+  margin: 5px;
+  text-align: center;
+  border: 1px solid grey;
+  font-family: "Merriweather", sans-serif; }
+  .shop-product img {
+    width: 100%;
+    height: 250px;
+    border-bottom: 5px solid #e1e1e1; }
+
+.dots {
+  margin: 0px 5px;
+  height: 36px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-bottom: 2px dotted lightgrey; }
+
+.single-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 80%; }
+  .single-product .product-title {
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 39px;
+    color: #d99054;
+    margin: 0;
+    letter-spacing: 2px; }
+  .single-product p {
+    font-family: "Merriweather", sans-serif;
+    margin: 0; }
+
+.single-thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+  width: 50%; }
+  .single-thumbnail img {
+    width: 600px;
+    height: 400px; }
+
+.product-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 20px;
+  width: 50%;
+  height: 500px; }
+  .product-content .product-price {
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 29px;
+    width: 130px;
+    margin: 10px 0;
+    font-weight: normal; }
+  .product-content p {
+    font-family: "Merriweather", sans-serif;
+    font-size: 16px;
+    padding-bottom: 20px; }
+  .product-content a {
+    width: 100px; }
+
+.product-price {
+  font-weight: 500;
+  font-size: 50px; }
+
+.product-content {
+  font-size: 19px; }
+
+#social-media {
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 5px; }
+  #social-media:hover {
+    background: #248a83;
+    color: white; }
 
 .site-header {
   z-index: 99;
@@ -1075,7 +1269,7 @@ object {
   margin-top: -2rem;
   letter-spacing: 2px; }
 
-.boxone {
+.adventure-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1086,12 +1280,12 @@ object {
   width: 99%;
   height: auto;
   margin-left: 30px; }
-  .boxone a {
+  .adventure-container a {
     padding: 0.75rem;
     text-decoration: none; }
-    .boxone a:hover {
+    .adventure-container a:hover {
       color: grey; }
-  .boxone h2 {
+  .adventure-container h2 {
     color: white;
     margin-left: 10px;
     font-family: "Merriweather", sans-serif;
@@ -1099,7 +1293,7 @@ object {
     margin-top: 24px;
     line-height: 1.25;
     letter-spacing: 2px; }
-  .boxone .tax-button {
+  .adventure-container .text-button {
     font-size: 19.2px;
     background: #248a83;
     font-family: "Novecento Sans Web",sans-serif;
@@ -1109,11 +1303,11 @@ object {
     margin-top: 10px;
     white-space: nowrap;
     color: white; }
-  .boxone .big-box {
+  .adventure-container .big-box {
     font-size: 48px; }
-  .boxone .small-box {
+  .adventure-container .small-box {
     font-size: 22px; }
-  .boxone .one {
+  .adventure-container .adventure-1 {
     height: 520px;
     width: 100%;
     margin-bottom: 20px;
@@ -1121,7 +1315,7 @@ object {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/canoe-girl.jpg);
     background-size: cover, cover;
     background-position: center, center; }
-  .boxone .onex {
+  .adventure-container .adventure-x {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1132,11 +1326,11 @@ object {
     margin: 10px;
     height: 660px;
     width: 50%; }
-    .boxone .onex a {
+    .adventure-container .adventure-x a {
       width: 210px; }
-      .boxone .onex a:hover {
+      .adventure-container .adventure-x a:hover {
         color: purple; }
-  .boxone .boxtwo {
+  .adventure-container .adventure-container-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1149,7 +1343,7 @@ object {
     height: 500px;
     width: 50%;
     margin-right: 30px; }
-  .boxone .two {
+  .adventure-container .adventure-2 {
     height: 250px;
     width: 100%;
     margin: 10px;
@@ -1157,7 +1351,7 @@ object {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/beach-bonfire.jpg);
     background-size: cover, cover;
     background-position: center, center; }
-  .boxone .three {
+  .adventure-container .adventure-3 {
     height: 250px;
     width: 47%;
     margin: 10px;
@@ -1165,7 +1359,7 @@ object {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/mountain-hikers.jpg);
     background-size: cover, cover;
     background-position: center, center; }
-  .boxone .four {
+  .adventure-container .adventure-4 {
     height: 250px;
     width: 46%;
     margin: 10px;
@@ -1173,7 +1367,7 @@ object {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/night-sky.jpg);
     background-size: cover, cover;
     background-position: center, center; }
-  .boxone #read-entry1 {
+  .adventure-container #read-adventure-entry {
     padding: 5px;
     border: 1px solid white;
     background-color: white;
@@ -1181,5 +1375,5 @@ object {
     color: white;
     background-color: transparent;
     text-transform: uppercase; }
-    .boxone #read-entry1:hover {
+    .adventure-container #read-adventure-entry:hover {
       background: #248a83; }

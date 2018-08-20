@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # Page Templates
-# Contains templates for About page, Sidebar, Single Blog Post page,
+# Contains templates for: 
+        About page, 
+        Sidebar, 
+        Single Blog Post page, 
+        Shop Products page, 
+        Single Product page
 --------------------------------------------------------------*/
 
 // About Page
@@ -36,11 +41,13 @@
 }
 
 // Sidebar
-.sidebar {
-  width: 300px;
+#secondary {
+  width: 30%;
   min-height: 100%;
   border-left: 1px solid teal;
-  padding: 100px 0 0 50px;
+  // padding: 100px 0 0 50px;
+  margin: 0;
+  padding: 0;
   h2 {
     font-family: "Novecento Sans Web", sans-serif;
     font-size: 1.35rem;
@@ -49,6 +56,7 @@
     font-weight: 700;
   }
   p {
+    font-family: "Merriweather", sans-serif;
     margin: 15px 0;
     }
   ul {
@@ -71,6 +79,7 @@
   overflow: hidden;
   padding: 100px 30px 0 0;
   width: 790px;
+  margin-left: 50px;
   img {
     width: auto;
     height: 520px;
@@ -97,13 +106,10 @@
       }
     }
   }
-
-
-
-
   .entry-meta {
     position: absolute;
     font-family: "Novecento Sans Web", sans-serif;
+    font-size: 16px;
     color: white;
     text-transform: uppercase;
     padding: 0 20px;
@@ -112,3 +118,278 @@
     background: #248a83;
   }
 }
+
+// .read-more:after {
+//   content: "\2192";"
+// }
+
+
+
+// .post {
+//   .entry-title {
+//     font-size: 2.2rem;
+//     font-weight: 700;
+//     color: white;
+//   }
+//   .comments-link {
+//     a {
+//       color: white;
+//       padding: 0;
+//       &:hover {
+//         color: orange;
+//       }
+//     }
+//   }
+//   .entry-footer {
+//     font-family: "Novecento Sans Web", sans-serif;
+//     text-transform: uppercase;
+//     margin: 20px 0;
+//     .cat-links, .tag-links {
+//       padding-right: 20px;
+//     }
+//     a {
+//       color: teal;
+//       padding: 0;
+//       &:hover {
+//         color: yellow;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+.journal-post-container {
+  width: 100%;
+
+}
+
+.featured-post {
+  width: 70%;
+}
+
+#bob {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+// Shop Products Page
+.shop-stuff-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px dashed lightgrey;
+  font-family: "Merriweather", sans-serif;
+  .shop-stuff-header {
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
+    font-size: 39px;
+    margin-top: 90px;
+  }
+  .shop-taxonomy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font-family: "Novecentos Sans Web", sans-serif;
+    text-transform: uppercase;
+    font-size: 19.2px;
+  }
+  a {
+    color: #248a83;
+    text-decoration: none;
+    &:hover {
+      color: orange;
+    }
+  }
+  p {
+    margin: 0 1.5rem;
+  }
+}
+
+.shop-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 45px;
+  margin-bottom: 70px;
+}
+
+.shop-product {
+  width: 24%;
+  height: auto;
+  margin: 5px;
+  text-align: center;
+  border: 1px solid grey;
+  img {
+    width: 100%;
+    height: 250px;
+    border-bottom: 5px solid #e1e1e1;
+  }
+  font-family: "Merriweather", sans-serif;
+}
+
+.dots {
+  margin: 0px 5px;
+  height: 36px;
+  flex-grow: 1;
+  border-bottom: 2px dotted lightgrey;
+}
+
+
+// Single Shop Product Page
+.single-product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  .product-title {
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 39px;
+    color: #d99054;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  p {
+    font-family: "Merriweather", sans-serif;
+    margin: 0;
+  }
+}
+
+.single-thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 50%;
+  img {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  width: 50%;
+  height: 500px;
+  .product-price {
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 29px;
+    width: 130px;
+    margin: 10px 0;
+    font-weight: normal;
+  }
+  p {
+    font-family: "Merriweather", sans-serif;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  a {
+    width: 100px;
+  }
+}
+
+.product-price {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.product-content {
+  font-size: 19px;
+}
+
+#social-media {
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 5px;
+  &:hover {
+    background: #248a83;
+    color: white;
+  }
+
+}
+
+
+// .single-product {
+//   .product {
+//     display: flex;
+//     padding-top: 100px;
+//     .entry-header {
+//       padding: 30px;
+//       width: 50%;
+//     }
+//     .entry-content {
+//       padding: 20px;
+//       margin: 0;
+//       width: 50%;
+//       h2 {
+//         font-weight: 700;
+//         color: orange;
+//         text-align: left;
+//         margin: 0;
+//       }
+//       .price {
+//         font-family: "Novecentos", sans-serif;
+//         font-weight: 300;
+//         font-size: 2rem;
+//         margin: 0;
+//       }
+//     }
+//   }
+// }
+
+
+// .lone-product {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   width: 80%;
+//   margin: 0 auto;
+//   h2 {
+//     font-size: 50px;
+//     margin: 0;
+//     color: #d99054;
+//   }
+//   p {
+//     margin: 0;
+//   }
+// }
+
+// .lone-thumb {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 500px;
+//   width: 50%;
+//   img {
+//     height: 400px;
+//     width: 600px;
+//   }
+// }
+
+// .cont {
+
+// }
