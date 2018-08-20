@@ -41,9 +41,51 @@
 
 /* Comments */
 
-.comment-content a {
-	word-wrap: break-word;
-}
 .bypostauthor {
-	display: block;
+  display: block;
+}
+.comment-content a {
+  word-wrap: break-word;
+}
+.comment-meta .comment-content {
+  margin-left: 75px;
+  padding-left: 25px;
+}
+.comments-area {
+  h2, h3 {
+    text-transform: uppercase;
+  }
+  ol {
+    padding: 0;
+    margin: 0;
+  }
+}
+.comment-body {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.comment-form {
+  label {
+    display: block;
+  }
+  input[type=text], input[type=email], input[type=url] {
+    width: 100%;
+  }
+}
+.comment-form-author .comment-form-email {
+  float: left;
+  width: 49%;
+}
+.comment-form-email {
+  margin-left: 2%;
+}
+.comment-form-url{
+  width: 100%;
+}
+.comment-author-avatar {
+  float: left;
+  width: 75px;
+}
+.avatar {
+  border-radius: 50%;
 }

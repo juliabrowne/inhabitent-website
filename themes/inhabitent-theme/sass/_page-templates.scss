@@ -5,12 +5,15 @@
         Sidebar, 
         Single Blog Post page, 
         Shop Products page, 
-        Taxonomy Products Page,
-        Single Product page
+        Taxonomy Products page,
+        Single Product page,
+        Error 404 page,
+        Search 
+ 
 --------------------------------------------------------------*/
 
 // About Page
-.content-area {
+.about-content {
   .hero-image-header {
     height: 100vh;
     width: 1120px;
@@ -34,7 +37,7 @@
     margin-right: -150px;
    
   }
-  p {
+  .about-p {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -46,39 +49,69 @@
 }
 
 // Sidebar
-#secondary {
-  width: 300px;
-  min-height: 100%;
-  border-left: 1px solid teal;
-  padding: 100px 0 0 50px;
-  margin-left: 0;
-  margin-top: 150px;
-  padding: 0;
-  h2 {
-    font-family: "Novecento Sans Web", sans-serif;
-    font-size: 1.35rem;
-    letter-spacing: 3px;
-    text-align: left;
-    font-weight: 700;
+.blog, .single-post, .search, .error404 {
+  .site-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 63px;
   }
-  p {
-    font-family: "Merriweather", sans-serif;
-    margin: 15px 0;
-    font-size: 16px;
+  .content-area {
+    width: 73%;
+    padding-right: 5%;
+    padding-top: 40px;
+    border-right: 1px solid lightgrey;
   }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  a {
-    font-family: "Merriweather", sans-serif;
-    color: orange;
-    &:hover {
-      color: black;
-    }
+  .widget-area {
+    width: 25%;
+    padding-top: 40px;
+    padding-left: 3%;
   }
 }
+
+
+
+// #secondary {
+//   width: 300px;
+//   min-height: 100%;
+//   border-left: 1px solid teal;
+//   padding: 100px 0 0 50px;
+//   margin-left: 0;
+//   margin-top: 150px;
+//   padding: 0;
+//   h2 {
+//     font-family: "Novecento Sans Web", sans-serif;
+//     font-size: 1.35rem;
+//     letter-spacing: 3px;
+//     text-align: left;
+//     font-weight: 700;
+//   }
+//   p {
+//     font-family: "Merriweather", sans-serif;
+//     margin: 15px 0;
+//     font-size: 16px;
+//   }
+//   ul {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//   }
+//   a {
+//     font-family: "Merriweather", sans-serif;
+//     color: orange;
+//     &:hover {
+//       color: black;
+//     }
+//   }
+// }
+
+
+
+
+
+
 
 // Single Blog Post Page
 .post {
@@ -130,7 +163,8 @@
 #journal-section {
   display: flex;
   flex-direction: row;
-  max-width: 760px;
+  // max-width: 760px;
+  max-width: 1120px;
   padding-right: 5%;
   padding-bottom: 60px;
   padding-top: 60px;
@@ -139,10 +173,13 @@
   }
 }
 
-.journal-post-container {
+.featured-single-post {
   width: 100%;
   position: relative;
   padding-right: 0;
+  margin-left: 60px;
+  // margin-top: -30px;
+  font-family: "Merriweather", sans-serif;
   img {
     width: 100%;
     display: block;
@@ -150,7 +187,8 @@
   h1,
   h2 {
     font-family: "Novecento Sans Web", sans-serif;
-    font-size: 39px; // position: absolute;
+    font-size: 33px; 
+    position: absolute;
     top: 0;
     left: 0;
     padding: .75rem 1.5rem;
@@ -166,7 +204,12 @@
     }
   }
   .date-and-comment {
-    font-family: "Merriweather", sans-serif; // position: absolute;
+    position: absolute;
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 16px;
+
     bottom: 0;
     right: 0;
     padding: 0 30px;
@@ -191,6 +234,14 @@
     border: none;
   }
 }
+
+
+
+
+
+
+
+
 
 // Shop Products Page
 .shop-stuff-all {
@@ -332,3 +383,26 @@
     border: none;
   }
 }
+
+// Error 404 Page
+.error404, .search-no-results {
+  fieldset {
+    border: none;
+    padding-left: 0;
+  }
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+// Search Page
+.search .page-header {
+  border-bottom: 1px solid lightgrey;
+}
+.hentry {
+  margin: 0 0 4.5rem;
+}
+
+

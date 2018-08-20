@@ -1,41 +1,48 @@
 <?php
 /**
- * The main template file.
+ * The template for displaying all pages.
  *
  * @package inhabitent_Theme
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+ <?php
+   $args = array( 'post_type' => 'post', 'order' => 'DESC');
+	 $blog_posts = get_posts( $args ); // returns an array of posts ?>
+		
+	<section id="journal-section">
 
-		<?php if ( have_posts() ) : ?>
+    <div class="journal-post-container">
+    
+    <?php foreach ( $blog_posts as $post ) : setup_postdata( $post ); ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+      <div class="featured-single-post">
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+      <div class="featured-post-thumbnail">
+			<?php the_post_thumbnail(); ?>
+			<div class="date-and-comment">
+        <?php inhabitent_posted_on(); ?> / 
+        <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+        </div>
+      </div>  
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+        <a href='<?php the_permalink(); ?>'>
+        <h2 class="featured-post-title">
+						<?php the_title(); ?>
+				</h2>
+				</a>	
+				<?php the_excerpt(); ?>
+        <a class="read-entry-button" href='<?php the_permalink(); ?>'>Read More</a>
+				</a>
+				
+ 
+			</div>
 
-			<?php endwhile; ?>
+      <?php endforeach; wp_reset_postdata(); ?>
+			</div>
 
-			<?php the_posts_navigation(); ?>
+		<?php get_sidebar(); ?>
+</section>
 
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

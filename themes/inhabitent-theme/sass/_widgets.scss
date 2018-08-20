@@ -14,3 +14,24 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+.widget_archive ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.widget h2 {
+	font-size: 1.5rem;
+}
+.widget p {
+	font-size: 0.5rem;
+}
+
+.contact-us {
+	display: flex;
+}
+.contact-us i {
+	width: 20px;
+	line-height: 2;
+	margin-right: 0.5rem;
+}
