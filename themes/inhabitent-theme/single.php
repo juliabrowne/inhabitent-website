@@ -6,15 +6,33 @@
  */
 
 get_header(); ?>
+<section class="journal-section">
+	<div class="journal-post-container">
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+ <div class="featured-single-post">
 
-			<?php the_post_navigation(); ?>
+<?php the_post_thumbnail(); ?>
+
+<h5 class="post-meta-info">
+	<?php inhabitent_posted_on(); ?> / 
+	<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+</h5>
+
+	<a href='<?php the_permalink(); ?>'>
+	
+	<h4 class="featured-post-title">
+			<?php the_title(); ?>
+	</h4>
+	</a>	
+
+<?php the_content(); ?>
+
+
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -28,6 +46,9 @@ get_header(); ?>
 	
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
+			</div>
+			<?php get_sidebar(); ?>
+</section>
+
 
 <?php get_footer(); ?>

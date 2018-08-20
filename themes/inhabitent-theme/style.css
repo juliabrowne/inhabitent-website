@@ -882,7 +882,7 @@ object {
   .widget-area svg {
     color: 404040; }
 
-#journal-section {
+.journal-section {
   margin-top: 100px;
   margin-bottom: 60px;
   height: 100%;
@@ -953,6 +953,9 @@ object {
     cursor: pointer;
     color: white;
     border: none; }
+
+.journal-section p {
+  text-align: justify; }
 
 .shop-stuff-all {
   display: -webkit-box;

@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<section id="journal-section">
+<section class="journal-section">
 <div class="journal-post-container">
 
  <?php
