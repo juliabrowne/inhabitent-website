@@ -853,30 +853,38 @@ object {
   margin-bottom: 60px;
   font-family: "Merriweather", sans-serif; }
 
-.blog .site-content, .single-post .site-content, .search .site-content, .error404 .site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 1120px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 63px; }
-
-.blog .content-area, .single-post .content-area, .search .content-area, .error404 .content-area {
-  width: 73%;
-  padding-right: 5%;
-  padding-top: 40px;
-  border-right: 1px solid lightgrey; }
-
-.blog .widget-area, .single-post .widget-area, .search .widget-area, .error404 .widget-area {
-  width: 25%;
-  padding-top: 40px;
-  padding-left: 3%; }
+.widget-area {
+  width: 30%;
+  min-height: 100%;
+  border-left: 1px solid lightgrey; }
+  .widget-area h2 {
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center; }
+  .widget-area p {
+    font-family: "Merriweather", sans-serif;
+    font-size: 14px;
+    color: #404040;
+    margin-left: 30px; }
+  .widget-area a {
+    color: #248a83;
+    text-decoration: none; }
+    .widget-area a:hover {
+      color: 404040; }
+  .widget-area ul {
+    font-family: "Merriweather", sans-serif;
+    font-size: 14px;
+    color: #404040;
+    margin-left: 30px; }
+  .widget-area svg {
+    color: 404040; }
 
 #journal-section {
+  margin-top: 100px;
+  margin-bottom: 60px;
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -900,24 +908,28 @@ object {
   .featured-single-post .post-meta-info {
     position: absolute;
     color: white;
+    text-align: center;
     background-color: #248a83;
-    font-size: 25px;
     padding: 5px;
     top: 400px;
-    left: 250px;
-    width: 375px; }
+    left: 253px;
+    width: 375px;
+    font-size: 16px;
+    font-family: "Novecento Sans Web", sans-serif;
+    font-weight: normal; }
   .featured-single-post .featured-post-title {
     position: absolute;
     color: white;
     background-color: #248a83;
     font-size: 39px;
     font-family: "Novecento Sans Web", sans-serif;
+    font-size: 34px;
     text-transform: uppercase;
     padding: .75rem 1.5rem;
     line-height: 1.1;
     width: 500px;
     height: auto;
-    top: -33px; }
+    top: 0; }
     .featured-single-post .featured-post-title:hover {
       color: #d99054; }
 
@@ -934,7 +946,8 @@ object {
   display: inline-block;
   width: auto;
   padding: 10px 20px;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  margin-bottom: 40px; }
   .read-entry-button:hover {
     background: #248a83;
     cursor: pointer;
@@ -977,9 +990,10 @@ object {
     margin: 0;
     margin-bottom: 40px;
     padding: 0;
-    font-family: "Novecentos Sans Web", sans-serif;
     text-transform: uppercase;
     font-size: 19.2px; }
+    .shop-stuff-all .shop-taxonomy p {
+      font-family: "Novecento Sans Web", sans-serif; }
   .shop-stuff-all a {
     color: #248a83;
     text-decoration: none; }
@@ -1012,7 +1026,8 @@ object {
   font-family: "Merriweather", sans-serif; }
   .shop-product img {
     width: 100%;
-    height: 250px;
+    height: 180px;
+    overflow: hidden;
     border-bottom: 5px solid #e1e1e1; }
 
 .dots {
@@ -1044,8 +1059,9 @@ object {
   margin-right: 30px;
   width: 50%; }
   .shop-entry img {
-    width: 600px;
-    height: 400px; }
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
 
 .entry-content {
   width: 50%;
