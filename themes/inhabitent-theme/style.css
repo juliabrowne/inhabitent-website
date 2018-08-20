@@ -828,7 +828,8 @@ object {
         Taxonomy Products page,
         Single Product page,
         Error 404 page,
-        Search 
+        Search page,
+        Find Us page
  
 --------------------------------------------------------------*/
 .about-content .hero-image-header {
@@ -1118,6 +1119,43 @@ object {
 
 .hentry {
   margin: 0 0 4.5rem; }
+
+.find-us-container {
+  margin-top: 80px;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%; }
+
+.find-us {
+  width: 65%; }
+  .find-us h1 {
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase; }
+  .find-us h2 {
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px; }
+  .find-us p {
+    font-family: "Merriweather", sans-serif; }
+
+label {
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  color: #2f1339;
+  font-size: 17px;
+  margin-bottom: 100px; }
+
+.wpcf7-form-control {
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0; }
 
 .site-header {
   z-index: 99;
