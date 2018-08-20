@@ -12,7 +12,7 @@ get_header(); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		
-	<div class="entry-header">
+	<div class="shop-entry">
 		<?php if ( has_post_thumbnail() ) : ?>
 				<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
