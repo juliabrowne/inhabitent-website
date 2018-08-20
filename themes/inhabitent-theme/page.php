@@ -10,7 +10,8 @@ get_header(); ?>
  <?php
    $args = array( 'post_type' => 'post', 'order' => 'DESC');
 	 $blog_posts = get_posts( $args ); // returns an array of posts ?>
-    <section id="bob">
+		
+	<section id="journal-section">
 
     <div class="journal-post-container">
     
@@ -33,7 +34,7 @@ get_header(); ?>
 				</h2>
 				</a>	
 				<?php the_excerpt(); ?>
-        <a class="read-entry-button" href='<?php the_permalink(); ?>'>Read Entry</a>
+        <a class="read-entry-button" href='<?php the_permalink(); ?>'>Read More</a>
 				</a>
 				
  

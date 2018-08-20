@@ -736,10 +736,12 @@ object {
   font-family: "Merriweather", sans-serif; }
 
 #secondary {
-  width: 30%;
+  width: 300px;
   min-height: 100%;
   border-left: 1px solid teal;
-  margin: 0;
+  padding: 100px 0 0 50px;
+  margin-left: 0;
+  margin-top: 150px;
   padding: 0; }
   #secondary h2 {
     font-family: "Novecento Sans Web", sans-serif;
@@ -749,7 +751,8 @@ object {
     font-weight: 700; }
   #secondary p {
     font-family: "Merriweather", sans-serif;
-    margin: 15px 0; }
+    margin: 15px 0;
+    font-size: 16px; }
   #secondary ul {
     list-style: none;
     padding: 0;
@@ -799,20 +802,65 @@ object {
     top: 592px;
     background: #248a83; }
 
-.journal-post-container {
-  width: 100%; }
-
-.featured-post {
-  width: 70%; }
-
-#bob {
+#journal-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  max-width: 760px;
+  padding-right: 5%;
+  padding-bottom: 60px;
+  padding-top: 60px; }
+  #journal-section article {
+    padding-bottom: 60px; }
+
+.journal-post-container {
+  width: 100%;
+  position: relative;
+  padding-right: 0; }
+  .journal-post-container img {
+    width: 100%;
+    display: block; }
+  .journal-post-container h1, .journal-post-container h2 {
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 39px;
+    top: 0;
+    left: 0;
+    padding: .75rem 1.5rem;
+    margin-top: 2.25rem;
+    text-align: left;
+    line-height: 1.1;
+    max-width: 75%;
+    color: white;
+    background-color: #248a83; }
+    .journal-post-container h1 a, .journal-post-container h2 a {
+      color: white;
+      text-decoration: none; }
+  .journal-post-container .date-and-comment {
+    font-family: "Merriweather", sans-serif;
+    bottom: 0;
+    right: 0;
+    padding: 0 30px;
+    background-color: #248a83; }
+
+.read-entry-button {
+  border: 1px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  font-size: 0.9rem; }
+  .read-entry-button:hover {
+    background: #248a83;
+    cursor: pointer;
+    color: white;
+    border: none; }
 
 .shop-stuff-all {
   display: -webkit-box;
@@ -1143,6 +1191,9 @@ object {
   margin-left: 20px;
   margin-right: 20px;
   font-family: "Merriweather", sans-serif; }
+  .home .shop-stuff:hover {
+    border: 1px solid orange;
+    border-top-width: 5px; }
 
 .home .shop-stuff-container {
   display: -webkit-box;
@@ -1158,6 +1209,23 @@ object {
 .home .shop-stuff-icon {
   height: 70px;
   width: 70px; }
+
+.home .shop-stuff-button {
+  border: none;
+  background: #248a83;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  font-size: 0.9rem; }
+  .home .shop-stuff-button:hover {
+    background: #194C4C;
+    cursor: pointer;
+    color: white;
+    border: none; }
 
 .home .inhabitent-journal-title {
   font-family: "Novecento Sans Web", sans-serif;

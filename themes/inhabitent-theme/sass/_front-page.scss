@@ -25,6 +25,10 @@
   flex-direction: column;
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
+  &:hover {
+    border: 1px solid orange;
+    border-top-width: 5px;
+  }
   padding: .75rem;
   text-align: center;
   width: 23%;
@@ -46,6 +50,25 @@
   height: 70px;
   width: 70px;
 }
+
+.home .shop-stuff-button {
+  border: none;
+  background: #248a83;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  &:hover {
+    background: #194C4C;
+    cursor: pointer;
+    color: white;
+    border: none;
+  }
+  }
 
 .home .inhabitent-journal-title {
   font-family: "Novecento Sans Web", sans-serif;
