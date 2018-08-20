@@ -58,10 +58,21 @@
               
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>  
         
-        <div class="search-form">
-            <i class="fas fa-search"></i>
-            <?php get_search_form(); ?>
-        
+
+<form role="search" method="get" class="search-form-nav" action="<?php echo                 home_url( '/' ); ?>">
+		<button class="search-submit search-submit-nav">
+			<span class="search-icon" aria-hidden="true">
+			<i class="fa fa-search nav-search-icon"></i>
+			</span>
+			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
+		</button>
+
+	<label>
+	    <input type="search" class="search-field-nav" placeholder="Type and hit enter..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+	</label>
+</form>
+
+
         </nav><!-- #site-navigation -->
             
 

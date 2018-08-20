@@ -89,3 +89,62 @@
 .avatar {
   border-radius: 50%;
 }
+.comment-author {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.comment-metadata {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: normal;
+  color: grey;
+}
+p {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: normal;
+  margin-bottom: .75rem;
+}
+.reply a {
+  color: #248a83;
+  text-decoration: none;
+  font-family: "Merriweather", sans-serif;
+  font-size: 1rem;
+}
+.comments-area h3{
+	font-family: 'Novecento Sans Web', sans-serif;
+	text-transform: uppercase;
+	border-top: 1px solid #e1e1e1;
+  font-size: 1.2rem;
+}
+.comments-title {
+    font-family: 'Novecento Sans Web', sans-serif;
+    text-transform: uppercase;
+    border-top: 1px solid #e1e1e1;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #2f1339;
+    font-size: 33.6px;
+}
+.form-submit .submit {
+    padding: .75rem;
+    line-height: 1.5;
+    font-family: "Novecento Sans Web", sans-serif;
+    border: none;
+    background-color: #248a83;
+    text-decoration: none;
+    color: grey;
+    background-color: transparent;
+    text-transform: uppercase;
+    &:hover {
+      background: #248a83;
+      border: none;
+      color: grey;
+    }
+  }

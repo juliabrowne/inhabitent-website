@@ -699,6 +699,64 @@ a {
 .avatar {
   border-radius: 50%; }
 
+.comment-author {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.75; }
+
+.comment-metadata {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: normal;
+  color: grey; }
+
+p {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: normal;
+  margin-bottom: .75rem; }
+
+.reply a {
+  color: #248a83;
+  text-decoration: none;
+  font-family: "Merriweather", sans-serif;
+  font-size: 1rem; }
+
+.comments-area h3 {
+  font-family: 'Novecento Sans Web', sans-serif;
+  text-transform: uppercase;
+  border-top: 1px solid #e1e1e1;
+  font-size: 1.2rem; }
+
+.comments-title {
+  font-family: 'Novecento Sans Web', sans-serif;
+  text-transform: uppercase;
+  border-top: 1px solid #e1e1e1;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #2f1339;
+  font-size: 33.6px; }
+
+.form-submit .submit {
+  padding: .75rem;
+  line-height: 1.5;
+  font-family: "Novecento Sans Web", sans-serif;
+  border: none;
+  background-color: #248a83;
+  text-decoration: none;
+  color: grey;
+  background-color: transparent;
+  text-transform: uppercase; }
+  .form-submit .submit:hover {
+    background: #248a83;
+    border: none;
+    color: grey; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -838,6 +896,7 @@ object {
     min-width: 100%; }
   .post .entry-title {
     font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
     font-size: 39px;
     position: absolute;
     padding: .75rem 1.5rem;
@@ -894,6 +953,7 @@ object {
   .featured-single-post h1,
   .featured-single-post h2 {
     font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
     font-size: 33px;
     position: absolute;
     top: 0;
@@ -915,6 +975,7 @@ object {
     text-transform: uppercase;
     text-align: right;
     font-size: 16px;
+    color: white;
     bottom: 0;
     right: 0;
     padding: 0 30px;
@@ -1142,27 +1203,47 @@ object {
           align-items: center;
   width: 70%;
   margin-top: 35px; }
-  .main-navigation .menu a {
+  .main-navigation a {
     text-transform: uppercase;
     color: teal;
     padding: 12.5px; }
-    .main-navigation .menu a:hover {
+    .main-navigation a:hover {
       color: grey; }
-  .main-navigation .menu a.top {
-    color: white; }
-    .main-navigation .menu a.top:hover {
-      color: grey; }
-  .main-navigation .page_item a:active {
+  .main-navigation .search-form {
+    display: inline; }
+  .main-navigation .nav-search-icon {
+    display: inline;
+    margin: 0 10px;
+    font-size: 1rem;
     color: teal; }
-  .main-navigation .fas.fa-search {
-    margin-left: 15px;
-    color: teal; }
-    .main-navigation .fas.fa-search:hover {
+    .main-navigation .nav-search-icon:hover {
       color: black; }
-    .main-navigation .fas.fa-search.top {
-      color: white; }
-    .main-navigation .fas.fa-search.top:hover {
-      color: grey; }
+  .main-navigation .search-field-nav {
+    background: transparent;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    width: 0;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    font-size: 1rem; }
+    .main-navigation .search-field-nav::-webkit-input-placeholder {
+      color: orange; }
+    .main-navigation .search-field-nav:-ms-input-placeholder {
+      color: orange; }
+    .main-navigation .search-field-nav::-ms-input-placeholder {
+      color: orange; }
+    .main-navigation .search-field-nav::placeholder {
+      color: orange; }
+    .main-navigation .search-field-nav-focus {
+      width: 200px; }
+  .main-navigation .search-submit {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 1.1rem;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .site-footer {
   background-image: url("../../images/dark-wood.png");
@@ -1351,26 +1432,33 @@ object {
     padding-right: 1rem;
     text-transform: uppercase;
     font-family: "Novecento Sans Web", sans-serif;
-    font-size: 20.8px;
+    font-size: 18px;
     line-height: 1.25; }
   .home .featured-post a {
     color: #248a83;
     padding: .75rem;
     text-decoration: none; }
     .home .featured-post a:hover {
-      color: purple; }
+      color: white; }
   .home .featured-post .date-and-comment {
     padding-left: 1rem;
     margin-top: 10px;
     font-size: 12px;
     font-family: "Merriweather", sans-serif; }
   .home .featured-post .featured-post-thumbnail {
-    border: 1px solid #e1e1e1;
-    border-bottom-width: 5px;
     background-color: #e1e1e1;
     height: 250px;
     overflow: hidden;
     position: relative; }
+    .home .featured-post .featured-post-thumbnail img {
+      left: 50%;
+      max-height: 250px;
+      max-width: none;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(-50%, -52%);
+              transform: translate(-50%, -52%);
+      width: auto; }
   .home .featured-post .featured-post-info {
     border: 1px solid #e1e1e1;
     -webkit-box-orient: vertical;
@@ -1461,7 +1549,7 @@ object {
     .adventure-container .adventure-x a {
       width: 210px; }
       .adventure-container .adventure-x a:hover {
-        color: purple; }
+        color: white; }
   .adventure-container .adventure-container-2 {
     display: -webkit-box;
     display: -ms-flexbox;

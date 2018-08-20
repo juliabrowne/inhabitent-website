@@ -1,27 +1,4 @@
-// .header-container {
-//   width: 100%;
-//   height: 50px;
-//   position: fixed;
-//   background: rgba(255, 255, 255, .8);
-//   border-bottom: 1px solid black;
-//   z-index: 3;
-// }
-
-
-// .site-header {
-//   position: fixed;
-//   display: flex;
-//   justify-content: space-between;
-//   transform: tranlateX(-50%);
-//   font-family: "Novecento Sans Web", sans-serif;
-//   text-transform: uppercase;
-//   padding: 10px 0;
-//   left: 50%;
-//   z-index: 3;
-// }
-
 .site-header {
-  // transform: translateX(-50%); 
   z-index: 99;
   width: 100%;
   height: 80px;
@@ -49,12 +26,6 @@
     width: 50px;
     margin-top: 30px;
     margin-left: -50px;
-    // background-image: url(../../images/logos/inhabitent-logo.tent.svg);
-    // background-size: cover;
-    // padding: 16px 25px;
-    // &.top {
-    //   background-image: url(../../images/logos/inhabitent-logo-tent-white.svg);
-    // }
   }
 }
 
@@ -65,7 +36,7 @@
   align-items: center;
   width: 70%;
   margin-top: 35px;
-  .menu a {
+ a {
     text-transform: uppercase;
     color: teal;
     padding: 12.5px;
@@ -73,186 +44,42 @@
       color: grey;
     }
   }
-  .menu a.top {
-    color: white;
-    &:hover {
-      color: grey;
-    }
+  .search-form {
+    display: inline;
   }
-  .page_item a:active {
-    color: teal;
-  }
-  .fas.fa-search {
-    margin-left: 15px;
+  .nav-search-icon {
+    display: inline;
+    margin: 0 10px;
+    font-size: 1rem;
     color: teal;
     &:hover {
       color: black;
     }
-    &.top {
-      color: white;
+  }
+  .search-field-nav {
+    background: transparent;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    width: 0;
+    transition: width 1s;
+    font-size: 1rem;
+    &::placeholder{
+      color: orange;
     }
-    &.top:hover {
-      color: grey;
+    &-focus {
+      width: 200px;
     }
+  }
+  .search-submit {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 1.1rem;
+    box-shadow: none;
   }
 }
 
 
 
 
-
-
-// .site-header {
-//   position: fixed;
-//   display: flex;
-//   justify-content: space-between;
-//   transform: tranlateX(-50%);
-//   font-family: "Novecento Sans Web", sans-serif;
-//   text-transform: uppercase;
-//   padding: 10px 0;
-//   left: 50%;
-//   z-index: 3;
-// }
-
-// .main-navigation {
-//   display: flex;
-//   width: auto;
-//   z-index: 2;
-// }
-
-// .main-navigation a {
-//   font-size: 16px;
-//   color: #248a83;
-//   padding: 0 15px;
-//   margin-top: 5px;
-//   text-transform: uppercase;
-//   &:hover {
-//     color: white;
-//   }
-// }
-
-// .main-navigation #header-logo-icon {
-//   height: 33px;
-//   width: 50px;
-//   margin-left: 20px;
-//   display: flex;
-
-
-// }
-
-// .search-form {
-//   display: flex;
-// }
-
-// .search-field {
-//   display: none;
-//   background: none;
-//   border: none;
-//   outline: none;
-//   font-family: "Novecento Sans Web", sans-serif;
-//   text-transform: uppercase;
-// }
-
-// .search-form {
-//   line-height: 1;
-//   padding-left: 1.5rem;
-//   color: teal;
-//   border: none;
-// }
-
-
-
-
-
-
-
-
-
-
-  // .site-header {
-  //   position: fixed;
-  //   background-color: hsla(0, 0%, 100%, 0.85);
-  //   border-bottom: 1px solid #e1e1e1;
-  //   padding: 0.5rem 0;
-  //   transition: top 0.5s linear;
-  //   width: 100%;
-  //   z-index: 3;
-  //   .header-container {
-  //     align-items: center;
-  //     display: flex;
-  //     justify-content: space-between;
-  //     .site-branding {
-  //       img {
-  //         height: 33px;
-  //         width: 50px;
-  //       }
-  //     }
-  //     .main-navigation {
-  //       width: auto;
-  //       float: none;
-  //       display: flex;
-  //       a {
-  //         font-family: $font__main;
-  //         text-transform: uppercase;
-  //         color: $color_green;
-  //         &:hover {
-  //           color: black;
-  //         }
-  //       }
-  //       li {
-  //         padding-left: 1.5rem;
-  //       }
-  //       .header-search {
-  //         line-height: 1;
-  //         padding-left: 1.5rem;
-  //         .search-form {
-  //           color: $color_green;
-  //           border: none;
-  //           .search-submit {
-  //             background: none;
-  //             border: none;
-  //             box-shadow: none;
-  //             padding: 0;
-  //             &:focus {
-  //               outline: none;
-  //             }
-  //             .icon-search {
-  //               color: $color_green;
-  //               font-size: 1.2rem;
-  //             }
-  //           }
-  //           .search-field {
-  //             width: 0;
-  //             padding: 0;
-  //             margin: 0;
-  //             border: none;
-  //             transition: 1s;
-  //           }
-  //           .search-focus {
-  //             width: 200px;
-  //             padding-left: 5px;
-  //             &:focus {
-  //               outline: none;
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  // .logo-header-light {
-  //   display: none;
-  // }
-  // .site-content {
-  //   padding-top: 3.5rem;
-  // }
-  // .home,
-  // .page-template-about {
-  //   .site-header {
-  //     background: none;
-  //     border: none;
-  //   }
-  //   .site-content {
-  //     padding-top: 0;
-  //   }
-  // }
