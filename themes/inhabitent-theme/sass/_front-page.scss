@@ -246,7 +246,9 @@
     background-position: center, center;
   }
   #read-adventure-entry {
-    padding: 5px;
+    padding: .75rem;
+    line-height: 1.5;
+    font-family: "Novecento Sans Web", sans-serif;
     border: 1px solid white;
     background-color: white;
     text-decoration: none;
@@ -255,6 +257,8 @@
     text-transform: uppercase;
     &:hover {
       background: #248a83;
+      border: none;
     }
   }
 }
+

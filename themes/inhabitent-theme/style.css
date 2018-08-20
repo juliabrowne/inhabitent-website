@@ -1411,7 +1411,9 @@ object {
     background-size: cover, cover;
     background-position: center, center; }
   .adventure-container #read-adventure-entry {
-    padding: 5px;
+    padding: .75rem;
+    line-height: 1.5;
+    font-family: "Novecento Sans Web", sans-serif;
     border: 1px solid white;
     background-color: white;
     text-decoration: none;
@@ -1419,4 +1421,5 @@ object {
     background-color: transparent;
     text-transform: uppercase; }
     .adventure-container #read-adventure-entry:hover {
-      background: #248a83; }
+      background: #248a83;
+      border: none; }
