@@ -14,8 +14,6 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-		<!-- <article id="" -->
-	
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 		<!-- </article> -->

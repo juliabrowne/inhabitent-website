@@ -711,7 +711,9 @@ object {
         Single Product page
 --------------------------------------------------------------*/
 .content-area .hero-image-header {
-  height: 100vh; }
+  height: 100vh;
+  width: 1120px;
+  margin-top: -140px; }
 
 .content-area h1 {
   color: white;
@@ -726,14 +728,18 @@ object {
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: "Novecento Sans Web", sans-serif; }
+  font-family: "Novecento Sans Web", sans-serif;
+  margin-left: 420px;
+  margin-right: -150px; }
 
 .content-area p {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-  font-family: "Merriweather", sans-serif; }
+  font-family: "Merriweather", sans-serif;
+  margin-left: 150px;
+  margin-right: 150px; }
 
 #secondary {
   width: 300px;
@@ -784,12 +790,14 @@ object {
     line-height: 1.1;
     top: 110px;
     max-width: 75%; }
-    .post .entry-title a, .post .entry-title .entry-title {
+    .post .entry-title a,
+    .post .entry-title .entry-title {
       color: white;
       font-size: 2.2rem;
       font-weight: 700;
       padding: 0; }
-      .post .entry-title a:hover, .post .entry-title .entry-title:hover {
+      .post .entry-title a:hover,
+      .post .entry-title .entry-title:hover {
         color: orange; }
   .post .entry-meta {
     position: absolute;
@@ -824,7 +832,8 @@ object {
   .journal-post-container img {
     width: 100%;
     display: block; }
-  .journal-post-container h1, .journal-post-container h2 {
+  .journal-post-container h1,
+  .journal-post-container h2 {
     font-family: "Novecento Sans Web", sans-serif;
     font-size: 39px;
     top: 0;
@@ -836,7 +845,8 @@ object {
     max-width: 75%;
     color: white;
     background-color: #248a83; }
-    .journal-post-container h1 a, .journal-post-container h2 a {
+    .journal-post-container h1 a,
+    .journal-post-container h2 a {
       color: white;
       text-decoration: none; }
   .journal-post-container .date-and-comment {
@@ -1100,7 +1110,7 @@ object {
   color: white;
   line-height: 2.75;
   height: 354px;
-  width: 1224px;
+  width: 1120px;
   font-family: "Merriweather", serif;
   font-weight: 300;
   margin: 0 auto; }
@@ -1347,7 +1357,7 @@ object {
     white-space: nowrap;
     color: white; }
   .adventure-container .big-box {
-    font-size: 48px; }
+    font-size: 45px; }
   .adventure-container .small-box {
     font-size: 22px; }
   .adventure-container .adventure-1 {
@@ -1404,7 +1414,7 @@ object {
     background-position: center, center; }
   .adventure-container .adventure-4 {
     height: 250px;
-    width: 46%;
+    width: 45%;
     margin: 10px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/adventure-photos/night-sky.jpg);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/night-sky.jpg);
