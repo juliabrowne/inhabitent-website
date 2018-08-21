@@ -843,7 +843,8 @@ object {
         Single Product page,
         Error 404 page,
         Search page,
-        Find Us page
+        Find Us page,
+        Blog Archive page,
 
  
 --------------------------------------------------------------*/
@@ -871,7 +872,6 @@ object {
 
 .widget-area {
   width: 30%;
-  min-height: 100%;
   border-left: 1px solid lightgrey; }
   .widget-area h2 {
     font-family: "Novecento Sans Web", sans-serif;
@@ -972,6 +972,22 @@ object {
 
 .journal-section p {
   text-align: justify; }
+
+h2 .entry-title {
+  color: magenta; }
+
+h1, .page-title {
+  margin-top: auto;
+  line-height: 1.25;
+  font-size: 33px;
+  margin-bottom: .5rem;
+  font-family: "Novecento Sans Web",sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.post .entry-header img {
+  height: 500px;
+  width: 100%; }
 
 .shop-stuff-all {
   display: -webkit-box;
@@ -1134,13 +1150,18 @@ object {
 .results-main {
   margin-top: 60px;
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  width: 86%; }
+  .results-main .content-area .site-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
   .results-main .search-submit {
     display: none; }
   .results-main .page-title {
-    width: 95%;
     font-size: 38;
     border-bottom: 1px solid lightgrey;
     font-family: "Novecento Sans Web", sans-serif;
@@ -1164,7 +1185,6 @@ object {
 
 .results {
   margin-left: 60px;
-  width: 700px;
   padding-right: 50px;
   margin-bottom: 100px; }
 
@@ -1394,9 +1414,10 @@ label {
   padding: 60px 50px; }
 
 .copyright {
-  font-family: "Novecento Sans Web", sans-serif;
   width: 100%;
   text-align: center; }
+  .copyright p {
+    font-family: "Novecento Sans Web", sans-serif; }
 
 .home .home-banner {
   height: 100vh;

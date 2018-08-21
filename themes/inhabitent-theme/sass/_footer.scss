@@ -63,7 +63,9 @@
 }
 
 .copyright {
-  font-family: "Novecento Sans Web", sans-serif;
   width: 100%;
   text-align: center;
+  p {
+    font-family: "Novecento Sans Web", sans-serif;
+  }
 }

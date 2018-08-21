@@ -10,7 +10,8 @@
         Single Product page,
         Error 404 page,
         Search page,
-        Find Us page
+        Find Us page,
+        Blog Archive page,
 
  
 --------------------------------------------------------------*/
@@ -44,7 +45,6 @@
 // Sidebar
 .widget-area {
   width: 30%;
-  min-height: 100%;
   border-left: 1px solid lightgrey;
   h2 {
     font-family: "Novecento Sans Web", sans-serif;
@@ -78,7 +78,7 @@
   }
 }
 
-// Main Blog Post Page
+// Main Blog Post Page and Single Blog Post Page
 .journal-section {
   margin-top: 100px;
   margin-bottom: 60px;
@@ -156,6 +156,27 @@
 
 .journal-section p {
   text-align: justify;
+}
+
+// Blog Archive Page
+h2 .entry-title {
+  color: magenta;
+}
+
+
+
+h1, .page-title {
+  margin-top: auto;
+  line-height: 1.25;
+  font-size: 33px;
+  margin-bottom: .5rem;
+  font-family: "Novecento Sans Web",sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.post .entry-header img {
+    height: 500px;
+    width: 100%;
 }
 
 // Shop Products Page
@@ -321,12 +342,18 @@
 .results-main {
   margin-top: 60px;
   margin-bottom: 20px;
-  display: flex;
+  width: 86%;
+  .content-area {
+    .site-main {
+      display: flex;
+      flex-direction: row;
+    }
+  }
   .search-submit {
     display: none;
   }
   .page-title {
-    width: 95%;
+    // width: 95%;
     font-size: 38;
     border-bottom: 1px solid lightgrey;
     font-family: "Novecento Sans Web", sans-serif;
@@ -356,7 +383,7 @@
 }
 .results {
   margin-left: 60px;
-  width: 700px;
+  // width: 60%;
   padding-right: 50px;
   margin-bottom: 100px;
 }
@@ -432,3 +459,4 @@ label {
     text-shadow: none;
   }
 }
+
