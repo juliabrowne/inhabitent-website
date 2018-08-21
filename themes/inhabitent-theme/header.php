@@ -4,7 +4,6 @@
  *
  * @package Inhabitent_Theme
  */
-
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +39,7 @@
 
 
          <div class="site-icon"><a href="<?php echo home_url() ?>">
-             <img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" alt="Inhabitent Header Logo Icon">
+             <img src="<?php echo get_template_directory_uri() ?>images/logos/inhabitent-logo-tent.svg" alt="Inhabitent Header Logo Icon">
            </a>
         </div>
            

@@ -973,22 +973,6 @@ object {
 .journal-section p {
   text-align: justify; }
 
-h2 .entry-title {
-  color: magenta; }
-
-h1, .page-title {
-  margin-top: auto;
-  line-height: 1.25;
-  font-size: 33px;
-  margin-bottom: .5rem;
-  font-family: "Novecento Sans Web",sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase; }
-
-.post .entry-header img {
-  height: 500px;
-  width: 100%; }
-
 .shop-stuff-all {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1136,19 +1120,40 @@ h1, .page-title {
     color: white;
     border: none; }
 
-.error404 fieldset,
-.search-no-results fieldset {
-  border: none;
-  padding-left: 0; }
-
-.error404 ul,
-.search-no-results ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0; }
+.site-main-404 {
+  margin-top: 140px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  width: 60%;
+  border-right: 1px solid #e1e1e1; }
+  .site-main-404 .content-area .site-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .site-main-404 .page-title {
+    font-size: 30px;
+    border-bottom: 1px solid lightgrey;
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .site-main-404 .page-content {
+    font-family: "Novecento Sans Web", sans-serif;
+    text-align: left; }
+    .site-main-404 .page-content a {
+      color: teal;
+      font-size: 16px;
+      text-decoration: none;
+      font-family: "Merriweather", sans-serif;
+      padding: 0; }
+      .site-main-404 .page-content a:hover {
+        color: black; }
 
 .results-main {
-  margin-top: 60px;
+  margin-top: 90px;
   margin-bottom: 20px;
   width: 86%; }
   .results-main .content-area .site-main {
