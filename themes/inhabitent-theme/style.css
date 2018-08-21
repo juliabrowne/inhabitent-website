@@ -1312,41 +1312,57 @@ label {
     padding: 12.5px; }
     .main-navigation a:hover {
       color: grey; }
-  .main-navigation .search-form {
-    display: inline; }
-  .main-navigation .nav-search-icon {
-    display: inline;
-    margin: 0 10px;
-    font-size: 1rem;
-    color: teal; }
-    .main-navigation .nav-search-icon:hover {
-      color: black; }
-  .main-navigation .search-field-nav {
-    background: transparent;
-    border: none;
-    color: white;
-    text-transform: uppercase;
-    width: 0;
-    -webkit-transition: width 1s;
-    transition: width 1s;
-    font-size: 1rem; }
-    .main-navigation .search-field-nav::-webkit-input-placeholder {
-      color: orange; }
-    .main-navigation .search-field-nav:-ms-input-placeholder {
-      color: orange; }
-    .main-navigation .search-field-nav::-ms-input-placeholder {
-      color: orange; }
-    .main-navigation .search-field-nav::placeholder {
-      color: orange; }
-    .main-navigation .search-field-nav-focus {
-      width: 200px; }
-  .main-navigation .search-submit {
-    background: transparent;
-    border: none;
-    padding: 0;
-    font-size: 1.1rem;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+
+fieldset .search-form {
+  display: inline; }
+
+fieldset .nav-search-icon {
+  color: #248a83;
+  margin-right: 20px;
+  margin-top: 7px; }
+  fieldset .nav-search-icon:hover {
+    color: black; }
+
+fieldset .search-field {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 0px;
+  height: 0px;
+  font-family: 'Novecento Sans Web';
+  background-color: transparent;
+  text-transform: uppercase;
+  outline: none; }
+  fieldset .search-field::-webkit-input-placeholder {
+    color: grey;
+    border: none; }
+  fieldset .search-field:-ms-input-placeholder {
+    color: grey;
+    border: none; }
+  fieldset .search-field::-ms-input-placeholder {
+    color: grey;
+    border: none; }
+  fieldset .search-field::placeholder {
+    color: grey;
+    border: none; }
+
+fieldset .show {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 200px;
+  height: 30px;
+  margin-right: 20px; }
+
+fieldset label .search-field {
+  border: 0; }
+
+fieldset .search-submit {
+  border: none;
+  border-radius: none;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #248a83;
+  margin: 0px; }
 
 .site-footer {
   background-image: url("../../images/dark-wood.png");

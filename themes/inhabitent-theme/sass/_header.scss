@@ -45,38 +45,48 @@
       color: grey;
     }
   }
+}
+
+fieldset {
   .search-form {
     display: inline;
   }
   .nav-search-icon {
-    display: inline;
-    margin: 0 10px;
-    font-size: 1rem;
-    color: teal;
+    color: #248a83;
+    margin-right: 20px;
+    margin-top: 7px;
     &:hover {
       color: black;
     }
   }
-  .search-field-nav {
-    background: transparent;
-    border: none;
-    color: white;
+  .search-field {
+    transition: 0.5s;
+    width: 0px;
+    height: 0px;
+    font-family: 'Novecento Sans Web';
+    background-color: transparent;
     text-transform: uppercase;
-    width: 0;
-    transition: width 1s;
-    font-size: 1rem;
-    &::placeholder{
-      color: orange;
-    }
-    &-focus {
-      width: 200px;
+    outline: none;
+    &::placeholder {
+      color: grey;
+      border: none;
     }
   }
+  .show {
+    transition: 0.5s;
+    width: 200px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  label .search-field {
+    border: 0;
+  }
   .search-submit {
-    background: transparent;
     border: none;
-    padding: 0;
-    font-size: 1.1rem;
+    border-radius: none;
+    background: transparent;
     box-shadow: none;
+    color: #248a83;
+    margin: 0px;
   }
 }
