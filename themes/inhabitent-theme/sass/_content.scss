@@ -132,19 +132,29 @@ p {
     color: #2f1339;
     font-size: 33.6px;
 }
+
 .form-submit .submit {
-    padding: .75rem;
-    line-height: 1.5;
-    font-family: "Novecento Sans Web", sans-serif;
-    border: none;
-    background-color: #248a83;
-    text-decoration: none;
-    color: grey;
-    background-color: transparent;
-    text-transform: uppercase;
-    &:hover {
-      background: #248a83;
+    margin-bottom: 100px;
       border: none;
-      color: grey;
-    }
-  }
+      background: #248a83;
+      color: white;
+      text-transform: uppercase;
+      font-family: "Novecento Sans Web", sans-serif;
+      text-decoration: none;
+      display: inline-block;
+      width: auto;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      border-radius: none;
+      box-shadow: none;
+      text-shadow: none;
+      &:hover {
+        background: #194C4C;
+        cursor: pointer;
+        color: white;
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+        text-shadow: none;
+      }
+      }

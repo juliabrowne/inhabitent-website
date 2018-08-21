@@ -375,22 +375,32 @@ label {
   border-radius: 0;
 }
 
-// .email-button {
-//   margin-bottom: 100px;
-//     border: none;
-//     background: #248a83;
-//     color: white;
-//     text-transform: uppercase;
-//     font-family: "Novecento Sans Web", sans-serif;
-//     text-decoration: none;
-//     display: inline-block;
-//     width: auto;
-//     padding: 10px 20px;
-//     font-size: 0.9rem;
-//     &:hover {
-//       background: #194C4C;
-//       cursor: pointer;
-//       color: white;
-//       border: none;
-//     }
-//     }
+.wpcf7-form-control-wrap textarea {
+  width: 650px;
+}
+
+.email-button input {
+  margin-bottom: 100px;
+    border: none;
+    background: #248a83;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Novecento Sans Web", sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: none;
+    box-shadow: none;
+    text-shadow: none;
+    &:hover {
+      background: #194C4C;
+      cursor: pointer;
+      color: white;
+      border: none;
+      border-radius: none;
+      box-shadow: none;
+      text-shadow: none;
+    }
+    }

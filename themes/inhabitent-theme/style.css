@@ -743,19 +743,30 @@ p {
   font-size: 33.6px; }
 
 .form-submit .submit {
-  padding: .75rem;
-  line-height: 1.5;
-  font-family: "Novecento Sans Web", sans-serif;
+  margin-bottom: 100px;
   border: none;
-  background-color: #248a83;
+  background: #248a83;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif;
   text-decoration: none;
-  color: grey;
-  background-color: transparent;
-  text-transform: uppercase; }
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none; }
   .form-submit .submit:hover {
-    background: #248a83;
+    background: #194C4C;
+    cursor: pointer;
+    color: white;
     border: none;
-    color: grey; }
+    border-radius: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1156,6 +1167,35 @@ label {
   background-color: #f4f4f4;
   border: 1px solid #e1e1e1;
   border-radius: 0; }
+
+.wpcf7-form-control-wrap textarea {
+  width: 650px; }
+
+.email-button input {
+  margin-bottom: 100px;
+  border: none;
+  background: #248a83;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none; }
+  .email-button input:hover {
+    background: #194C4C;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none; }
 
 .site-header {
   z-index: 99;
