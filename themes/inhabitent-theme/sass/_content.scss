@@ -120,8 +120,9 @@ p {
 .comments-area h3{
 	font-family: 'Novecento Sans Web', sans-serif;
 	text-transform: uppercase;
-	border-top: 1px solid #e1e1e1;
-  font-size: 1.2rem;
+
+  font-size: 29px;
+  margin-top: 50px;
 }
 .comments-title {
     font-family: 'Novecento Sans Web', sans-serif;
@@ -131,6 +132,9 @@ p {
     letter-spacing: 2px;
     color: #2f1339;
     font-size: 33.6px;
+}
+.comment-form-comment label {
+  margin-bottom: 10px;
 }
 
 .form-submit .submit {

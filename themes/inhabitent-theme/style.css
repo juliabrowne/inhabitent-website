@@ -730,8 +730,8 @@ p {
 .comments-area h3 {
   font-family: 'Novecento Sans Web', sans-serif;
   text-transform: uppercase;
-  border-top: 1px solid #e1e1e1;
-  font-size: 1.2rem; }
+  font-size: 29px;
+  margin-top: 50px; }
 
 .comments-title {
   font-family: 'Novecento Sans Web', sans-serif;
@@ -741,6 +741,9 @@ p {
   letter-spacing: 2px;
   color: #2f1339;
   font-size: 33.6px; }
+
+.comment-form-comment label {
+  margin-bottom: 10px; }
 
 .form-submit .submit {
   margin-bottom: 100px;
@@ -841,6 +844,7 @@ object {
         Error 404 page,
         Search page,
         Find Us page
+
  
 --------------------------------------------------------------*/
 .about-content .hero-image-header {
@@ -1116,20 +1120,53 @@ object {
     color: white;
     border: none; }
 
-.error404 fieldset, .search-no-results fieldset {
+.error404 fieldset,
+.search-no-results fieldset {
   border: none;
   padding-left: 0; }
 
-.error404 ul, .search-no-results ul {
+.error404 ul,
+.search-no-results ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0; }
 
-.search .page-header {
-  border-bottom: 1px solid lightgrey; }
+.results-main {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .results-main .search-submit {
+    display: none; }
+  .results-main .page-title {
+    width: 95%;
+    font-size: 38;
+    border-bottom: 1px solid lightgrey;
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .results-main .entry-header {
+    height: auto; }
+  .results-main .entry-title {
+    font-family: "Novecento Sans Web", sans-serif;
+    text-align: left; }
+    .results-main .entry-title a {
+      color: teal;
+      font-size: 28px;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0; }
+      .results-main .entry-title a:hover {
+        color: black; }
+  .results-main .entry-meta {
+    display: none; }
 
-.hentry {
-  margin: 0 0 4.5rem; }
+.results {
+  margin-left: 60px;
+  width: 700px;
+  padding-right: 50px;
+  margin-bottom: 100px; }
 
 .find-us-container {
   margin-top: 80px;

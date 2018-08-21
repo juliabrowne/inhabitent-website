@@ -11,14 +11,15 @@
         Error 404 page,
         Search page,
         Find Us page
+
  
 --------------------------------------------------------------*/
 
 // About Page
 .about-content {
   .hero-image-header {
-  height: 100vh;
-  width: 100%;
+    height: 100vh;
+    width: 100%;
   }
   h1 {
     color: white;
@@ -30,7 +31,7 @@
     font-family: "Novecento Sans Web", sans-serif;
     font-size: 34px;
   }
-   p {
+  p {
     width: 800px;
     font-size: 16px;
     margin-left: auto;
@@ -87,6 +88,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .featured-single-post {
   position: relative;
   width: 80%;
@@ -97,17 +99,17 @@
     width: 100%;
   }
   .post-meta-info {
-  position: absolute;
-  color: white;
-  text-align: center;
-  background-color: #248a83;
-  padding: 5px;
-  top: 400px;
-  left: 253px;
-  width: 375px; 
-  font-size: 16px;
-  font-family: "Novecento Sans Web", sans-serif;
-  font-weight: normal;
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #248a83;
+    padding: 5px;
+    top: 400px;
+    left: 253px;
+    width: 375px;
+    font-size: 16px;
+    font-family: "Novecento Sans Web", sans-serif;
+    font-weight: normal;
   }
   .featured-post-title {
     position: absolute;
@@ -150,24 +152,11 @@
     color: white;
     border: none;
   }
-} 
+}
 
 .journal-section p {
   text-align: justify;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Shop Products Page
 .shop-stuff-all {
@@ -315,7 +304,8 @@
 }
 
 // Error 404 Page
-.error404, .search-no-results {
+.error404,
+.search-no-results {
   fieldset {
     border: none;
     padding-left: 0;
@@ -328,12 +318,50 @@
 }
 
 // Search Page
-.search .page-header {
-  border-bottom: 1px solid lightgrey;
+.results-main {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  .search-submit {
+    display: none;
+  }
+  .page-title {
+    width: 95%;
+    font-size: 38;
+    border-bottom: 1px solid lightgrey;
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .entry-header {
+    height: auto;
+  }
+  .entry-title {
+    font-family: "Novecento Sans Web", sans-serif;
+    text-align: left;
+    a {
+      color: teal;
+      font-size: 28px;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .entry-meta {
+    display: none;
+  }
 }
-.hentry {
-  margin: 0 0 4.5rem;
+.results {
+  margin-left: 60px;
+  width: 700px;
+  padding-right: 50px;
+  margin-bottom: 100px;
 }
+
+
 
 // Find Us Page
 .find-us-container {
@@ -343,9 +371,9 @@
   flex-direction: row;
   width: 100%;
 }
+
 .find-us {
-  width: 65%;
-  // margin-left: 15px;
+  width: 65%; // margin-left: 15px;
   h1 {
     font-family: "Novecento Sans Web", sans-serif;
     text-transform: uppercase;
@@ -381,26 +409,26 @@ label {
 
 .email-button input {
   margin-bottom: 100px;
-    border: none;
-    background: #248a83;
+  border: none;
+  background: #248a83;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: none;
+  box-shadow: none;
+  text-shadow: none;
+  &:hover {
+    background: #194C4C;
+    cursor: pointer;
     color: white;
-    text-transform: uppercase;
-    font-family: "Novecento Sans Web", sans-serif;
-    text-decoration: none;
-    display: inline-block;
-    width: auto;
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    border: none;
     border-radius: none;
     box-shadow: none;
     text-shadow: none;
-    &:hover {
-      background: #194C4C;
-      cursor: pointer;
-      color: white;
-      border: none;
-      border-radius: none;
-      box-shadow: none;
-      text-shadow: none;
-    }
-    }
+  }
+}
