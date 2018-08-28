@@ -11,23 +11,19 @@ body {
   line-height: 1.75;
 }
 
+// .site-branding p {
+//   margin: 0;
+// }
 
-
-.site-branding p {
-  margin: 0;
-}
-
-.entry-content {
-  margin: 0;
-}
+// .entry-content {
+//   margin: 0;
+// }
 
 
 .site-header {
   z-index: 99;
   width: 100%;
-  height: 80px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 50px;
   font-family: "Novecento Sans Web", sans-serif;
   display: flex;
   justify-content: space-around;
@@ -35,23 +31,59 @@ body {
   top: 0;
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1;
-  &.top {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0);
-    border-bottom: 0;
+  a {
+    margin-top: -30px;
+  }
+  fieldset {
+    margin-top: -23px;
+    border: none;
+  }
+  .site-branding {
+    display: flex;
+    justify-content: flex-start;
+    .site-icon {
+      height: 33px;
+      width: 50px;
+      margin-top: 10px;
+      margin-left: -50px;
+    }
   }
 }
 
-.site-branding {
-  display: flex;
-  justify-content: flex-start;
-  .site-icon {
-    height: 33px;
-    width: 50px;
-    margin-top: 30px;
-    margin-left: -50px;
+.logged-in {
+  .site-header {
+    z-index: 99;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Novecento Sans Web", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #e1e1e1;
+    a {
+      margin-top: 4px;
+    }
+    fieldset {
+      margin-top: 8px;
+      border: none;
+    }
+  }
+  .site-branding {
+    display: flex;
+    justify-content: flex-start;
+    .site-icon {
+      height: 33px;
+      width: 50px;
+      margin-top: 30px;
+      margin-left: -50px;
+    }
   }
 }
+
 
 .main-navigation {
   z-index: 2;
