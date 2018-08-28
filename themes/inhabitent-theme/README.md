@@ -4,7 +4,7 @@ Inhabitent is a WordPress theme based off of Underscores. Project 4 for RED Acad
 
 ## Project Description
 
-Inhabitent is Vancouver's lead imaginary camping supply store. The custom theme created for them includes a custom post type ("products") and a custom taxonomy ("product type"), as well as a custom widget that lets the client to set their business hours. The "about" page is also client-friendly, allowing the client to upload their own banner image through the WordPress backend, and the addition of a "journal" means that the company can now easily make blog posts to showcase their products and spread their message.
+Inhabitent is Vancouver's lead imaginary camping supply store. The custom theme created for them includes a custom post type ("products") and a custom taxonomy ("product type"), as well as a custom widget that lets the client to set their business hours. The "about" page is also client-friendly, allowing the client to upload their own banner image through the WordPress backend. The addition of a "journal" means that the company can now easily make blog posts to showcase their products and spread their message.
 
 ###Tools Used
 
