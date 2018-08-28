@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: About Page
- * 
+ *
  * The template for displaying the About page.
  *
  * @package Inhabitent_Theme
@@ -9,26 +9,28 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="main-content-container">
 
-<section class="about-content">
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+        <section class="about-content">
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <?php while (have_posts()) : the_post(); ?>
 
-					<div class="about-text">
-						<?php the_content(); ?>
-					</div><!-- .entry-content -->
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				</article><!-- #post-## -->
+                    <div class="about-text">
+                        <?php the_content(); ?>
+                    </div><!-- .entry-content -->
 
-			<?php endwhile; // End of the loop. ?>
+                </article><!-- #post-## -->
 
-</section>
+            <?php endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+        </section>
+
+    </main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -1,3 +1,17 @@
+.main-content-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+
+.site-branding p {
+  margin: 0;
+}
+
+.entry-content {
+  margin: 0;
+}
+
 
 .site-header {
   z-index: 99;
@@ -90,6 +104,22 @@
 //     margin: 0px;
 //   }
 // }
+
+
+.site-header .search-submit {
+  display: none;
+}
+.site-header .search-field {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+
+.site-header .search-field.show {
+  width: 100px;
+  opacity: 1;
+}
 
 
 .header-search fieldset {

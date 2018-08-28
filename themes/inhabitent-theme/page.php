@@ -6,19 +6,21 @@
  */
 get_header(); ?>
 
-<section class="find-us-container">
+<div class="main-content-container">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+    <section class="find-us-container">
 
-<div class="find-us">
-	<h1>Find Us</h1>
-<?php the_content(); ?>
-</div>
+        <?php while (have_posts()) : the_post(); ?>
 
-   <?php endwhile; ?>
+            <div class="find-us">
+                <h1>Find Us</h1>
+                <?php the_content(); ?>
+            </div>
+
+        <?php endwhile; ?>
 
 
-<?php get_sidebar(); ?>
-</section>
+        <?php get_sidebar(); ?>
+    </section>
 
 <?php get_footer(); ?>

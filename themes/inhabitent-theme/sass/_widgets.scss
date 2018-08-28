@@ -2,12 +2,8 @@
 # Widgets
 --------------------------------------------------------------*/
 
-.widget {
-	margin: 0 0 $base__space-unit;
-
-	select {
-		max-width: 100%;
-	}
+.day-of-week {
+	font-weight: bold;
 }
 
 /* Search widget. */

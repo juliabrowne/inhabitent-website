@@ -7,34 +7,37 @@
 
 get_header(); ?>
 
-	<section class="single-product-section">
+<div class="main-content-container">
 
-	<?php while ( have_posts() ) : the_post(); ?>
+<section class="single-product-section">
 
-		
-	<div class="shop-entry">
-		<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-</div><!-- .entry-header -->
-
-<div class="entry-content">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			<p class="price"><?php echo CFS()->get( 'price' ); ?></p>
-		<div class="product-blurb">
-			<?php the_content(); ?>
-		</div>
+    <?php while (have_posts()) :
+    the_post(); ?>
 
 
-	<a class="button-border facebook social-media" href="#"><i class="fab-fa-facebook-f"></i>Like</a>
-	<a class="button-border twitter social-media" href="#"><i class="fab-fa-twitter"></i>Tweet</a>
-	<a class="button-border pinterest social-media" href="#"><i class="fab-fa-pinterest"></i>Pin</a>
+    <div class="shop-entry">
+        <?php if (has_post_thumbnail()) : ?>
+            <?php the_post_thumbnail('large'); ?>
+        <?php endif; ?>
+    </div><!-- .entry-header -->
 
-</div>
+    <div class="entry-content">
+        <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+        <p class="price"><?php echo CFS()->get('price'); ?></p>
+        <div class="product-blurb">
+            <?php the_content(); ?>
+        </div>
 
-	</section>
+
+        <a class="button-border facebook social-media" href="#"><i class="fab-fa-facebook-f"></i>Like</a>
+        <a class="button-border twitter social-media" href="#"><i class="fab-fa-twitter"></i>Tweet</a>
+        <a class="button-border pinterest social-media" href="#"><i class="fab-fa-pinterest"></i>Pin</a>
+
+    </div>
+
+</section>
 
 <?php endwhile; ?>
 
 
-	<?php get_footer(); ?>
+<?php get_footer(); ?>

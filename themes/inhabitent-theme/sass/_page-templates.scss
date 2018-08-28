@@ -95,7 +95,7 @@
   margin: 0 auto;
   margin-top: 20px;
   img {
-    height: 500px;
+    height: 461px;
     width: 100%;
   }
   .post-meta-info {
@@ -250,6 +250,8 @@
 // .journal-section p {
 //   text-align: justify;
 // }
+
+
 // Shop Products Page
 .shop-stuff-all {
   display: flex;
@@ -314,8 +316,7 @@
     overflow: hidden;
     border-bottom: 5px solid #e1e1e1;
   }
-  font-family: "Merriweather",
-  sans-serif;
+  font-family: "Merriweather", sans-serif;
 }
 
 .dots {
@@ -324,6 +325,16 @@
   flex-grow: 1;
   border-bottom: 2px dotted lightgrey;
 }
+
+// -- add display flex to container
+// .dots {
+//   flex-grow: 1;
+//   overflow: hidden;
+//   &::after {
+//     content: '.........';
+//   }
+// }
+
 
 // Taxonomy Products Page
 .taxonomy-content {
@@ -396,11 +407,30 @@
 }
 
 // Error 404 Page
+.error404 .site-content {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  height: 100%;
+  width: 100%;
+  input[type=search] {
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+  }
+  fieldset {
+    width: 50%;
+    border: none;
+    button {
+      display: none;
+    }
+  }
+}
+
 .site-main-404 {
-  margin-top: 140px;
   margin-left: 70px;
   margin-bottom: 20px;
-  width: 60%;
   .content-area {
     .site-main {
       display: flex;
@@ -428,6 +458,18 @@
         color: black;
       }
     }
+  }
+}
+
+.widget {
+  h2 {
+    text-transform: uppercase;
+  }
+  li {
+    list-style: none;
+  }
+  p {
+    font-size: 16px;
   }
 }
 
@@ -490,7 +532,7 @@
 }
 
 .find-us {
-  width: 65%; // margin-left: 15px;
+  width: 65%;
   h1 {
     font-family: "Novecento Sans Web", sans-serif;
     text-transform: uppercase;

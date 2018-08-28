@@ -1,8 +1,8 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
+Author: Julia Browne
+Author URI: http://www.github.com/juliabrowne
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -593,10 +593,8 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5rem; }
-  .widget select {
-    max-width: 100%; }
+.day-of-week {
+  font-weight: bold; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -694,7 +692,8 @@ a {
 
 .comment-author-avatar {
   float: left;
-  width: 75px; }
+  width: 30px;
+  height: 30px; }
 
 .avatar {
   border-radius: 50%; }
@@ -919,7 +918,7 @@ object {
   margin: 0 auto;
   margin-top: 20px; }
   .featured-single-post img {
-    height: 500px;
+    height: 461px;
     width: 100%; }
   .featured-single-post .post-meta-info {
     position: absolute;
@@ -1120,11 +1119,28 @@ object {
     color: white;
     border: none; }
 
+.error404 .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  height: 100%;
+  width: 100%; }
+  .error404 .site-content input[type=search] {
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0; }
+  .error404 .site-content fieldset {
+    width: 50%;
+    border: none; }
+    .error404 .site-content fieldset button {
+      display: none; }
+
 .site-main-404 {
-  margin-top: 140px;
   margin-left: 70px;
   margin-bottom: 20px;
-  width: 60%;
   border-right: 1px solid #e1e1e1; }
   .site-main-404 .content-area .site-main {
     display: -webkit-box;
@@ -1151,6 +1167,15 @@ object {
       padding: 0; }
       .site-main-404 .page-content a:hover {
         color: black; }
+
+.widget h2 {
+  text-transform: uppercase; }
+
+.widget li {
+  list-style: none; }
+
+.widget p {
+  font-size: 16px; }
 
 .results-main {
   margin-top: 90px;
@@ -1259,6 +1284,16 @@ label {
             box-shadow: none;
     text-shadow: none; }
 
+.main-content-container {
+  max-width: 1120px;
+  margin: 0 auto; }
+
+.site-branding p {
+  margin: 0; }
+
+.entry-content {
+  margin: 0; }
+
 .site-header {
   z-index: 99;
   width: 100%;
@@ -1313,56 +1348,34 @@ label {
     .main-navigation a:hover {
       color: grey; }
 
-fieldset .search-form {
-  display: inline; }
+.site-header .search-submit {
+  display: none; }
 
-fieldset .nav-search-icon {
-  color: #248a83;
-  margin-right: 20px;
-  margin-top: 7px; }
-  fieldset .nav-search-icon:hover {
-    color: black; }
+.site-header .search-field {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s; }
 
-fieldset .search-field {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  width: 0px;
-  height: 0px;
-  font-family: 'Novecento Sans Web';
-  background-color: transparent;
-  text-transform: uppercase;
-  outline: none; }
-  fieldset .search-field::-webkit-input-placeholder {
-    color: grey;
-    border: none; }
-  fieldset .search-field:-ms-input-placeholder {
-    color: grey;
-    border: none; }
-  fieldset .search-field::-ms-input-placeholder {
-    color: grey;
-    border: none; }
-  fieldset .search-field::placeholder {
-    color: grey;
-    border: none; }
+.site-header .search-field.show {
+  width: 100px;
+  opacity: 1; }
 
-fieldset .show {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  width: 200px;
-  height: 30px;
-  margin-right: 20px; }
+.header-search fieldset {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none; }
 
-fieldset label .search-field {
-  border: 0; }
-
-fieldset .search-submit {
+.header-search input[type=search] {
+  display: none;
   border: none;
-  border-radius: none;
   background: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  line-height: 1;
+  font-family: "Novecento Sans Web", sans-serif;
   color: #248a83;
-  margin: 0px; }
+  font-size: 16px; }
 
 .site-footer {
   background-image: url("../../images/dark-wood.png");
