@@ -970,6 +970,12 @@ object {
 .journal-post-container {
   width: 70%;
   height: auto; }
+  .journal-post-container h1 {
+    font-family: "Novecento Sans Web", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin-left: 80px; }
 
 .read-entry-button {
   border: 1px solid #000;
@@ -1367,7 +1373,7 @@ body {
   .logged-in .site-header a {
     margin-top: 4px; }
   .logged-in .site-header fieldset {
-    margin-top: 8px;
+    margin-top: 15px;
     border: none; }
     .logged-in .site-header fieldset .nav-search-icon {
       color: #248a83; }

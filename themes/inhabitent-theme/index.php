@@ -7,6 +7,8 @@
 
 get_header(); ?>
 
+<div class="main-content-container">
+
 <section class="journal-section">
 <div class="journal-post-container">
 
