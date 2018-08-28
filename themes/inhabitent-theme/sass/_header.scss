@@ -11,15 +11,6 @@ body {
   line-height: 1.75;
 }
 
-// .site-branding p {
-//   margin: 0;
-// }
-
-// .entry-content {
-//   margin: 0;
-// }
-
-
 .site-header {
   z-index: 99;
   width: 100%;
@@ -35,8 +26,11 @@ body {
     margin-top: -30px;
   }
   fieldset {
-    margin-top: -23px;
+    margin-top: -20px;
     border: none;
+    .nav-search-icon {
+      color: #248a83;
+    }
   }
   .site-branding {
     display: flex;
@@ -70,6 +64,9 @@ body {
     fieldset {
       margin-top: 8px;
       border: none;
+      .nav-search-icon {
+        color: #248a83;
+      }
     }
   }
   .site-branding {
@@ -83,7 +80,6 @@ body {
     }
   }
 }
-
 
 .main-navigation {
   z-index: 2;
@@ -102,51 +98,6 @@ body {
   }
 }
 
-// fieldset {
-//   .search-form {
-//     display: inline;
-//   }
-//   .nav-search-icon {
-//     color: #248a83;
-//     margin-right: 20px;
-//     margin-top: 7px;
-//     &:hover {
-//       color: black;
-//     }
-//   }
-//   .search-field {
-//     transition: 0.5s;
-//     width: 0px;
-//     height: 0px;
-//     font-family: 'Novecento Sans Web';
-//     background-color: transparent;
-//     text-transform: uppercase;
-//     outline: none;
-//     &::placeholder {
-//       color: grey;
-//       border: none;
-//     }
-//   }
-//   .show {
-//     transition: 0.5s;
-//     width: 200px;
-//     height: 30px;
-//     margin-right: 20px;
-//   }
-//   label .search-field {
-//     border: 0;
-//   }
-//   .search-submit {
-//     border: none;
-//     border-radius: none;
-//     background: transparent;
-//     box-shadow: none;
-//     color: #248a83;
-//     margin: 0px;
-//   }
-// }
-
-
 .site-header .search-submit {
   display: none;
 }
@@ -155,28 +106,17 @@ body {
   overflow: hidden;
   opacity: 0;
   transition: .5s;
+  font-family: "Novecento Sans Web", sans-serif;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  outline-width: 0;
 }
 
 .site-header .search-field.show {
   width: 100px;
   opacity: 1;
 }
-
-
-.header-search fieldset {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-.header-search input[type=search] {
-  display: none;
-  border: none;
-  background: transparent;
-  line-height: 1;
-  font-family: "Novecento Sans Web", sans-serif;
-  color: #248a83;
-  font-size: 16px;
-}
-
