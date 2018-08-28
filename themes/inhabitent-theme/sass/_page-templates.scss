@@ -95,7 +95,6 @@
   margin: 0 auto;
   margin-top: 20px;
   img {
-    height: 461px;
     width: 100%;
   }
   .post-meta-info {
@@ -104,7 +103,7 @@
     text-align: center;
     background-color: #248a83;
     padding: 5px;
-    top: 400px;
+    top: 320px;
     left: 253px;
     width: 375px;
     font-size: 16px;
@@ -157,100 +156,6 @@
 .journal-section p {
   text-align: justify;
 }
-
-// Blog Archive Page
-// h1,
-// .page-title {
-//   margin-top: auto;
-//   line-height: 1.25;
-//   font-size: 33px;
-//   margin-bottom: .5rem;
-//   font-family: "Novecento Sans Web", sans-serif;
-//   letter-spacing: 2px;
-//   text-transform: uppercase;
-//   margin-left: 80px;
-// }
-
-// .post .entry-header img {
-//   height: 500px;
-//   max-width: 100%;
-// }
-
-// .entry-header {
-//   position: relative;
-//   width: 80%;
-//   margin: 0 auto;
-//   margin-top: 20px;
-//   img {
-//     height: 500px;
-//     width: 100%;
-//   }
-//   .entry-meta {
-//     position: absolute;
-//     color: white;
-//     text-align: center;
-//     background-color: #248a83;
-//     padding: 5px;
-//     top: 400px;
-//     left: 253px;
-//     width: 375px;
-//     font-size: 16px;
-//     font-family: "Novecento Sans Web", sans-serif;
-//     font-weight: normal;
-//   }
-// }
-
-// h2,
-// .entry-title
-// a {
-//   position: absolute;
-//   color: white;
-//   background-color: #248a83;
-//   font-family: "Novecento Sans Web", sans-serif;
-//   font-size: 34px;
-//   text-transform: uppercase;
-//   padding: .75rem 1.5rem;
-//   line-height: 1.1;
-//   width: 500px;
-//   height: auto;
-//   top: 0;
-//   text-decoration: none;
-//   &:hover {
-//     color: #d99054;
-//   }
-// }
-
-// .entry-content p {
-//   font-family: "Merriweather", sans-serif;
-//   font-weight: 700;
-//   font-size: 1rem;
-//   line-height: 1.75;
-//   font-weight: 400;
-//   text-align: center;
-// }
-
-// .read-entry-button {
-//   border: 1px solid #000;
-//   color: #000;
-//   text-transform: uppercase;
-//   font-family: "Novecento Sans Web", sans-serif;
-//   text-decoration: none;
-//   display: inline-block;
-//   width: auto;
-//   padding: 10px 20px;
-//   font-size: 0.9rem;
-//   margin-bottom: 40px;
-//   &:hover {
-//     background: #248a83;
-//     cursor: pointer;
-//     color: white;
-//     border: none;
-//   }
-// }
-// .journal-section p {
-//   text-align: justify;
-// }
-
 
 // Shop Products Page
 .shop-stuff-all {
