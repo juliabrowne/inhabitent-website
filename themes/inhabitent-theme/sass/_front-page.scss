@@ -252,7 +252,7 @@
     background-size: cover, cover;
     background-position: center, center;
   }
-  #read-adventure-entry {
+  .read-adventure-entry {
     padding: .75rem;
     line-height: 1.5;
     font-family: "Novecento Sans Web", sans-serif;
@@ -265,6 +265,7 @@
     &:hover {
       background: #248a83;
       border: none;
+      color: white;
     }
   }
 }

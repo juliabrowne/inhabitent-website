@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<div class="main-content-container">
+    <div class="main-content-container">
     <section class="journal-section">
         <div class="journal-post-container">
 
@@ -21,28 +21,27 @@ get_header(); ?>
 
                 <?php while (have_posts()) : the_post(); ?>
 
-  <div class="featured-single-post">
+                    <div class="featured-single-post">
 
-<?php the_post_thumbnail(); ?>
+                        <?php the_post_thumbnail(); ?>
 
-<h5 class="post-meta-info">
-<?php inhabitent_posted_on(); ?> / 
-    <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-</h5>
+                        <h5 class="post-meta-info">
+                            <?php inhabitent_posted_on(); ?> /
+                            <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?>
+                        </h5>
 
-    <a href='<?php the_permalink(); ?>'>
-    
-<h4 class="featured-post-title">
-            <?php the_title(); ?>
-    </h4>
-    </a>	
-    <?php the_excerpt(); ?>
-<a class="read-entry-button" href='<?php the_permalink(); ?>'>Read More</a>
-    </a>
-    
-    
+                        <a href='<?php the_permalink(); ?>'>
 
-</div>
+                            <h4 class="featured-post-title">
+                                <?php the_title(); ?>
+                            </h4>
+                        </a>
+                        <?php the_excerpt(); ?>
+                        <a class="read-entry-button" href='<?php the_permalink(); ?>'>Read More</a>
+                        </a>
+
+
+                    </div>
 
                 <?php endwhile; ?>
 

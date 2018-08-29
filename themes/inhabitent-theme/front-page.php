@@ -11,15 +11,15 @@ get_header(); ?>
     <div class="home-banner"></div>
 
 
-<div class="main-content-container">
+    <div class="main-content-container">
 
     <!-- Shop Section -->
     <h2 class="shop-stuff-title">Shop Stuff</h2>
 
-<?php $terms = get_terms([
-    'taxonomy' => 'product_type',
-    'hide_empty' => false,
-]); ?>
+    <?php $terms = get_terms([
+        'taxonomy' => 'product_type',
+        'hide_empty' => false,
+    ]); ?>
 
     <div class="shop-stuff-container">
         <?php foreach ($terms as $term) : ?>
@@ -43,9 +43,9 @@ get_header(); ?>
     <!-- Journal Posts -->
     <h2 class="inhabitent-journal-title">Inhabitent Journal</h2>
 
-<?php
-$args = array('post_type' => 'post', 'order' => 'DESC', 'numberposts' => 3);
-$blog_posts = get_posts($args); // returns an array of posts ?>
+    <?php
+    $args = array('post_type' => 'post', 'order' => 'DESC', 'numberposts' => 3);
+    $blog_posts = get_posts($args); // returns an array of posts ?>
 
     <div class="featured-post-container">
 
@@ -82,7 +82,7 @@ $blog_posts = get_posts($args); // returns an array of posts ?>
         <div class="adventure-x">
             <div class="adventure-1">
                 <a><h2 class="big-box">Getting Back to Nature in a Canoe</h2></a>
-                <a id='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
+                <a class='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
             </div>
 
             <div class="adventure-button">
@@ -94,24 +94,21 @@ $blog_posts = get_posts($args); // returns an array of posts ?>
         <div class="adventure-container-2">
             <div class="adventure-2">
                 <a><h2 class="big-box">A Night with Friends at the Beach</h2></a>
-                <a id='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
+                <a class='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
             </div>
 
             <div class="adventure-3">
                 <a><h2 class="small-box">Taking in the View at Big Mountain</h2></a>
-                <a id='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
+                <a class='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
             </div>
 
             <div class="adventure-4">
                 <a><h2 class="small-box">Star-Gazing at the Night Sky</h2></a>
-                <a id='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
+                <a class='read-adventure-entry' href='<?php the_permalink(); ?>'>Read More</a>
             </div>
 
         </div>
     </section>
 
-
-    </main><!-- #main -->
-    </div><!-- #primary -->
 
 <?php get_footer(); ?>
