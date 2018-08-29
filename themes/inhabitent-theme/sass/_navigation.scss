@@ -26,7 +26,8 @@ a {
 
 /* Menus */
 
-.main-navigation {
+.main-navigation,
+.main-navigation-white {
 	clear: both;
 	display: block;
 	float: left;
@@ -97,7 +98,8 @@ a {
 
 /* Small menu. */
 .menu-toggle,
-.main-navigation.toggled ul {
+.main-navigation.toggled ul,
+.main-navigation-white.toggled ul {
 	display: block;
 }
 
@@ -105,7 +107,8 @@ a {
 	.menu-toggle {
 		display: none;
 	}
-	.main-navigation ul {
+	.main-navigation ul,
+	.main-navigation-white ul {
 		display: block;
 	}
 }

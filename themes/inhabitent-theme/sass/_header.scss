@@ -5,11 +5,51 @@
 
 body {
   color: #404040;
-  font-family: Merriweather Web,serif;
+  font-family: Merriweather Web, serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.75;
 }
+
+
+// White Site Header
+
+.site-header-white {
+  z-index: 99;
+  width: 100%;
+  height: 50px;
+  font-family: "Novecento Sans Web", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  background-color: none;
+  border-bottom: none;
+  a {
+    margin-top: -30px;
+  }
+  fieldset {
+    margin-top: -20px;
+    border: none;
+
+    .nav-search-icon {
+      color: white;
+    }
+  }
+  .site-branding {
+    display: flex;
+    justify-content: flex-start;
+
+    .site-icon-white {
+      height: 33px;
+      width: 50px;
+      margin-top: 10px;
+      margin-left: -50px;
+    }
+  }
+}
+
+// Green Site Header
 
 .site-header {
   z-index: 99;
@@ -28,6 +68,7 @@ body {
   fieldset {
     margin-top: -20px;
     border: none;
+
     .nav-search-icon {
       color: #248a83;
     }
@@ -39,6 +80,46 @@ body {
       height: 33px;
       width: 50px;
       margin-top: 10px;
+      margin-left: -50px;
+    }
+  }
+}
+
+
+// Logged In Site Headers
+
+.logged-in {
+  .site-header-white {
+    z-index: 99;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Novecento Sans Web", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    background-color: none;
+    border-bottom: none;
+    a {
+      margin-top: 4px;
+    }
+    fieldset {
+      margin-top: 15px;
+      border: none;
+      .nav-search-icon {
+        color: white;
+      }
+    }
+  }
+  .site-branding {
+    display: flex;
+    justify-content: flex-start;
+    .site-icon-white {
+      height: 33px;
+      width: 50px;
+      margin-top: 30px;
       margin-left: -50px;
     }
   }
@@ -81,6 +162,26 @@ body {
   }
 }
 
+
+.main-navigation-white {
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  margin-top: 35px;
+
+  a {
+    text-transform: uppercase;
+    color: white;
+    padding: 12.5px;
+
+    &:hover {
+      color: lightyellow;
+    }
+  }
+}
+
 .main-navigation {
   z-index: 2;
   display: flex;
@@ -88,19 +189,26 @@ body {
   align-items: center;
   width: 70%;
   margin-top: 35px;
- a {
+
+  a {
     text-transform: uppercase;
     color: teal;
     padding: 12.5px;
+
     &:hover {
       color: grey;
     }
   }
 }
 
-.site-header .search-submit {
+
+.site-header-white .search-submit,
+.site-header .search-submit
+ {
   display: none;
 }
+
+.site-header-white .search-field,
 .site-header .search-field {
   width: 0;
   overflow: hidden;
@@ -116,6 +224,7 @@ body {
   outline-width: 0;
 }
 
+.site-header-white .search-field.show,
 .site-header .search-field.show {
   width: 100px;
   opacity: 1;
