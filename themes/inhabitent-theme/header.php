@@ -26,7 +26,7 @@
 
     <div class="header-container-white">
 
-        <header id="masthead" class="site-header-white" role="banner">
+        <header id="masthead" class="site-header-white header-search" role="banner">
 
             <div class="site-branding">
 
@@ -65,7 +65,7 @@
 
     <div class="header-container">
 
-<header id="masthead" class="site-header" role="banner">
+<header id="masthead" class="site-header header-search" role="banner">
 
     <div class="site-branding">
 
